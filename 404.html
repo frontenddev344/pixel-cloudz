@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page Not Found | PixelCloudz</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="assets/images/icons/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/bootstrap.css">
+  <link rel="stylesheet" href="./assets/css/fontawsome.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+<style>
+  body{min-height:100vh;display:flex;flex-direction:column;}
+  .error-wrap{flex:1;display:flex;align-items:center;justify-content:center;text-align:center;padding:140px 20px 80px;position:relative;overflow:hidden;background:var(--grad-hero);}
+  .error-code{
+    font-family:var(--font-heading);font-weight:900;font-size:clamp(90px,18vw,220px);line-height:1;
+    background:var(--grad-primary);background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;
+    animation:gradShift 6s ease infinite;
+  }
+</style>
+</head>
+<body>
+
+<header class="pc-navbar scrolled">
+  <div class="container-xl navbar-inner">
+    <a href="index.html" class="pc-logo"><span class="logo-mark"><i class="fa-solid fa-cloud-bolt"></i></span>Pixel<span class="accent">Cloudz</span></a>
+    <nav class="pc-nav-links">
+      <a href="index.html">Home</a><a href="reviews.html">Reviews</a><a href="platforms.html">Platforms</a>
+      <a href="categories.html">Categories</a><a href="top-rated.html">Top Rated</a><a href="latest.html">Latest</a>
+      <a href="about.html">About</a><a href="contact.html">Contact</a>
+    </nav>
+    <div class="pc-nav-actions"><button class="pc-burger" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button></div>
+  </div>
+</header>
+<div class="pc-mobile-backdrop"></div>
+<div class="pc-mobile-menu">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <span class="pc-logo" style="font-size:18px;"><span class="logo-mark" style="width:32px;height:32px;font-size:15px;"><i class="fa-solid fa-cloud-bolt"></i></span>Pixel<span class="accent">Cloudz</span></span>
+    <i class="fa-solid fa-xmark pc-mobile-close" style="font-size:20px;color:#fff;cursor:pointer;"></i>
+  </div>
+  <a href="index.html">Home</a><a href="reviews.html">Reviews</a><a href="platforms.html">Platforms</a>
+  <a href="categories.html">Categories</a><a href="top-rated.html">Top Rated</a><a href="latest.html">Latest</a>
+  <a href="about.html">About</a><a href="contact.html">Contact</a>
+</div>
+
+<section class="error-wrap">
+  <div>
+    <div class="error-code">404</div>
+    <h1 style="margin:10px 0 14px;">Looks Like This Level Doesn't Exist</h1>
+    <p class="section-sub" style="margin:0 auto 34px;">The page you're looking for was moved, deleted, or never existed. Let's get you back on track.</p>
+    <div class="d-flex gap-3 justify-content-center flex-wrap">
+      <a href="index.html" class="btn-neon">Back To Home <i class="fa-solid fa-house"></i></a>
+      <a href="reviews.html" class="btn-outline-neon">Browse Reviews <i class="fa-solid fa-gamepad"></i></a>
+    </div>
+  </div>
+</section>
+
+<footer class="pc-footer" style="padding-top:40px;">
+  <div class="container-xl">
+    <div class="footer-bottom" style="border-top:none;margin-top:0;">
+      <p>&copy; 2026 PixelCloudz. All rights reserved.</p>
+      <p><a href="privacy-policy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="terms.html">Terms &amp; Conditions</a> &nbsp;·&nbsp; <a href="disclaimer.html">Disclaimer</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="./assets/js/jquery.js"></script>
+<script src="./assets/js/bootstrap.js"></script>
+<script src="./assets/js/fontawsome.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

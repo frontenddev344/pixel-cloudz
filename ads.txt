@@ -1,0 +1,15 @@
+# ads.txt for pixelcloudz.com
+#
+# This file is intentionally left without a publisher entry.
+# Google requires ads.txt to be present, but an entry with a fake
+# or placeholder publisher ID will cause "ads.txt issues" warnings
+# in AdSense and can block ad serving entirely.
+#
+# TO ACTIVATE:
+# 1. Sign up for Google AdSense and get your Publisher ID (starts with "pub-").
+# 2. Add this line below, replacing the ID with your real one:
+#
+# google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+#
+# If you add other ad networks later (e.g. Media.net, Ezoic), each
+# gets its own line in the same format per that network's instructions.

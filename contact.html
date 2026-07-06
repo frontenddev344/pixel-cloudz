@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | PixelCloudz</title>
+<meta name="description" content="Get in touch with the PixelCloudz team — questions, press inquiries, or feedback on our reviews.">
+<link rel="canonical" href="https://pixelcloudz.com/contact.html">
+<link rel="icon" href="assets/images/icons/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/bootstrap.css">
+  <link rel="stylesheet" href="./assets/css/fontawsome.css">
+  <link rel="stylesheet" href="./assets/css/aos.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+<header class="pc-navbar" id="pcNavbar">
+  <div class="container-xl navbar-inner">
+    <a href="index.html" class="pc-logo"><span class="logo-mark"><i class="fa-solid fa-cloud-bolt"></i></span>Pixel<span class="accent">Cloudz</span></a>
+    <nav class="pc-nav-links">
+      <a href="index.html">Home</a><a href="reviews.html">Reviews</a><a href="platforms.html">Platforms</a>
+      <a href="categories.html">Categories</a><a href="top-rated.html">Top Rated</a><a href="latest.html">Latest</a>
+      <a href="about.html">About</a><a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div class="pc-nav-actions">
+      <button class="pc-icon-btn pc-search-trigger" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <button class="pc-burger" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+</header>
+<div class="pc-search-overlay"><div class="pc-search-box"><input type="text" class="pc-search-input" placeholder="Search games, reviews, platforms..."><span class="pc-search-close"><i class="fa-solid fa-xmark"></i> Close</span></div></div>
+<div class="pc-mobile-backdrop"></div>
+<div class="pc-mobile-menu">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <span class="pc-logo" style="font-size:18px;"><span class="logo-mark" style="width:32px;height:32px;font-size:15px;"><i class="fa-solid fa-cloud-bolt"></i></span>Pixel<span class="accent">Cloudz</span></span>
+    <i class="fa-solid fa-xmark pc-mobile-close" style="font-size:20px;color:#fff;cursor:pointer;"></i>
+  </div>
+  <a href="index.html">Home</a><a href="reviews.html">Reviews</a><a href="platforms.html">Platforms</a>
+  <a href="categories.html">Categories</a><a href="top-rated.html">Top Rated</a><a href="latest.html">Latest</a>
+  <a href="about.html">About</a><a href="contact.html" class="active">Contact</a>
+</div>
+
+<section class="pc-breadcrumb">
+  <div class="container-xl">
+    <div class="crumbs"><a href="index.html">Home</a><span class="sep">/</span><span>Contact</span></div>
+    <h1>Get In <span style="background:var(--grad-cool);-webkit-background-clip:text;background-clip:text;color:transparent;">Touch</span></h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container-xl">
+    <div class="row g-5">
+      <div class="col-lg-7" data-aos="fade-right">
+        <div class="glass-panel p-4 p-md-5">
+          <h3 class="mb-4" style="font-size:22px;">Send Us A Message</h3>
+          <form id="contactForm" novalidate action="https://formsubmit.co/contact@pixelcloudz.com" method="POST">
+            <input type="hidden" name="_subject" value="New message from PixelCloudz contact form">
+            <input type="hidden" name="_captcha" value="true">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="https://pixelcloudz.com/contact.html?sent=1">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="mb-2" style="font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);">Full Name</label>
+                <input type="text" class="form-control" name="name" required style="background:var(--bg-surface-2);border:1px solid var(--border-soft);color:#fff;padding:13px 16px;border-radius:8px;">
+              </div>
+              <div class="col-md-6">
+                <label class="mb-2" style="font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);">Email Address</label>
+                <input type="email" class="form-control" name="email" required style="background:var(--bg-surface-2);border:1px solid var(--border-soft);color:#fff;padding:13px 16px;border-radius:8px;">
+              </div>
+              <div class="col-12">
+                <label class="mb-2" style="font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);">Subject</label>
+                <input type="text" class="form-control" name="subject" required style="background:var(--bg-surface-2);border:1px solid var(--border-soft);color:#fff;padding:13px 16px;border-radius:8px;">
+              </div>
+              <div class="col-12">
+                <label class="mb-2" style="font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);">Message</label>
+                <textarea class="form-control" name="message" rows="5" required style="background:var(--bg-surface-2);border:1px solid var(--border-soft);color:#fff;padding:13px 16px;border-radius:8px;"></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn-neon w-100">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+              </div>
+              <div class="col-12"><p id="contactFormStatus" class="form-msg" style="display:none;"></p></div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-5" data-aos="fade-left">
+        <div class="sidebar-card mb-3">
+          <h6>Contact Information</h6>
+          <ul class="footer-contact" style="margin:0;">
+            <li><i class="fa-solid fa-location-dot"></i> Paulay Ede u. 55, 1061 Budapest, Hungary</li>
+            <li><i class="fa-solid fa-phone"></i> +36 70 318 6356</li>
+            <li><i class="fa-solid fa-envelope"></i> contact@pixelcloudz.com</li>
+          </ul>
+          <div class="footer-social mt-3">
+            <a href="https://facebook.com/pixelcloudz" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://x.com/pixelcloudz" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://instagram.com/pixelcloudz" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://discord.gg/pixelcloudz" target="_blank" rel="noopener noreferrer" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+          </div>
+        </div>
+        <div class="glass-panel" style="overflow:hidden;border-radius:var(--r-lg);">
+          <iframe title="PixelCloudz office location map" src="https://www.google.com/maps?q=Paulay+Ede+utca+55,+1061+Budapest,+Hungary&output=embed" width="100%" height="280" style="border:0;filter:grayscale(1) invert(0.9) contrast(0.9);" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="pc-footer">
+  <div class="container-xl">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6 footer-col">
+        <a href="index.html" class="pc-logo" style="margin-bottom:16px;display:inline-flex;"><span class="logo-mark"><i class="fa-solid fa-cloud-bolt"></i></span>Pixel<span class="accent">Cloudz</span></a>
+        <p>Honest, in-depth video game reviews, ratings, and platform availability for players who want the real story before they hit play.</p>
+     
+      </div>
+      <div class="col-lg-2 col-md-6 footer-col"><h6>Quick Links</h6><ul><li><a href="index.html">Home</a></li><li><a href="reviews.html">Reviews</a></li><li><a href="top-rated.html">Top Rated</a></li><li><a href="latest.html">Latest</a></li><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="col-lg-2 col-md-6 footer-col"><h6>Categories</h6><ul><li><a href="categories.html">Action</a></li><li><a href="categories.html">RPG</a></li><li><a href="categories.html">Open World</a></li><li><a href="categories.html">Horror</a></li><li><a href="categories.html">Indie</a></li></ul></div>
+      <div class="col-lg-2 col-md-6 footer-col"><h6>Platforms</h6><ul><li><a href="platforms.html">Steam</a></li><li><a href="platforms.html">PlayStation 5</a></li><li><a href="platforms.html">Xbox Series X</a></li><li><a href="platforms.html">Nintendo Switch</a></li><li><a href="platforms.html">PC</a></li></ul></div>
+      <div class="col-lg-2 col-md-6 footer-col">
+        <h6>Contact</h6>
+        <ul class="footer-contact">
+          <li><i class="fa-solid fa-location-dot"></i> Paulay Ede u. 55, 1061 Budapest, Hungary</li>
+          <li><i class="fa-solid fa-phone"></i> +36 70 318 6356</li>
+          <li><i class="fa-solid fa-envelope"></i> contact@pixelcloudz.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 PixelCloudz. All rights reserved.</p>
+      <p><a href="privacy-policy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="terms.html">Terms &amp; Conditions</a> &nbsp;·&nbsp; <a href="disclaimer.html">Disclaimer</a></p>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+<script src="./assets/js/jquery.js"></script>
+<script src="./assets/js/bootstrap.js"></script>
+<script src="./assets/js/fontawsome.js"></script>
+  <script src="./assets/js/aos.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+  // After FormSubmit redirects back here, show a persistent success message.
+  if (new URLSearchParams(window.location.search).get("sent") === "1") {
+    $(function(){
+      $("#contactFormStatus").removeClass("error").addClass("success")
+        .text("Thanks for reaching out! We'll get back to you within 1-2 business days.").show();
+    });
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Top Rated Games — Highest Scores | PixelCloudz</title>
+<meta name="description" content="The highest-rated games on PixelCloudz, ranked by editor score across every platform we cover.">
+<link rel="canonical" href="https://pixelcloudz.com/top-rated.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Top Rated Games — PixelCloudz">
+<meta property="og:description" content="Our highest-scoring reviews, ranked — the best games we've played across every platform.">
+<meta property="og:url" content="https://pixelcloudz.com/top-rated.html">
+<link rel="icon" href="assets/images/icons/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/bootstrap.css">
+  <link rel="stylesheet" href="./assets/css/fontawsome.css">
+  <link rel="stylesheet" href="./assets/css/aos.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+<style>
+  .rank-row{
+    display:flex;align-items:center;gap:20px;
+    background:var(--bg-card);border:1px solid var(--border-soft);border-radius:var(--r-lg);
+    padding:16px 20px;margin-bottom:14px;transition:.3s ease;
+  }
+  .rank-row:hover{border-color:var(--border-glow);box-shadow:0 10px 26px -14px rgba(255,90,26,0.35);transform:translateX(4px);}
+  .rank-num{
+    font-family:var(--font-heading);font-weight:800;font-size:22px;color:var(--text-muted);
+    width:44px;flex-shrink:0;text-align:center;
+  }
+  .rank-row:nth-child(1) .rank-num, .rank-row:nth-child(2) .rank-num, .rank-row:nth-child(3) .rank-num{
+    color:var(--cyan);text-shadow:0 0 12px rgba(212,255,61,0.5);
+  }
+  .rank-thumb{width:76px;height:56px;border-radius:10px;overflow:hidden;flex-shrink:0;}
+  .rank-thumb img{width:100%;height:100%;object-fit:cover;transition:.4s ease;}
+  .rank-row:hover .rank-thumb img{transform:scale(1.1);}
+  .rank-info{flex:1;min-width:0;}
+  .rank-info h5{font-size:15.5px;color:#fff;margin-bottom:3px;}
+  .rank-info span{font-size:12.5px;color:var(--text-muted);}
+  .rank-score{
+    font-family:var(--font-heading);font-weight:800;font-size:20px;color:var(--cyan);flex-shrink:0;
+    display:flex;align-items:center;gap:6px;
+  }
+</style>
+</head>
+<body>
+
+<header class="pc-navbar" id="pcNavbar">
+  <div class="container-xl navbar-inner">
+    <a href="index.html" class="pc-logo"><span class="logo-mark"><i class="fa-solid fa-cloud-bolt"></i></span>Pixel<span class="accent">Cloudz</span></a>
+    <nav class="pc-nav-links">
+      <a href="index.html">Home</a><a href="reviews.html">Reviews</a><a href="platforms.html">Platforms</a>
+      <a href="categories.html">Categories</a><a href="top-rated.html" class="active">Top Rated</a><a href="latest.html">Latest</a>
+      <a href="about.html">About</a><a href="contact.html">Contact</a>
+    </nav>
+    <div class="pc-nav-actions">
+      <button class="pc-icon-btn pc-search-trigger" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <button class="pc-burger" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+</header>
+<div class="pc-search-overlay"><div class="pc-search-box"><input type="text" class="pc-search-input" placeholder="Search games, reviews, platforms..."><span class="pc-search-close"><i class="fa-solid fa-xmark"></i> Close</span></div></div>
+<div class="pc-mobile-backdrop"></div>
+<div class="pc-mobile-menu">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <span class="pc-logo" style="font-size:18px;"><span class="logo-mark" style="width:32px;height:32px;font-size:15px;"><i class="fa-solid fa-cloud-bolt"></i></span>Pixel<span class="accent">Cloudz</span></span>
+    <i class="fa-solid fa-xmark pc-mobile-close" style="font-size:20px;color:#fff;cursor:pointer;"></i>
+  </div>
+  <a href="index.html">Home</a><a href="reviews.html">Reviews</a><a href="platforms.html">Platforms</a>
+  <a href="categories.html">Categories</a><a href="top-rated.html" class="active">Top Rated</a><a href="latest.html">Latest</a>
+  <a href="about.html">About</a><a href="contact.html">Contact</a>
+</div>
+
+<section class="pc-breadcrumb">
+  <div class="container-xl">
+    <div class="crumbs"><a href="index.html">Home</a><span class="sep">/</span><span>Top Rated</span></div>
+    <h1>Top Rated <span style="background:var(--grad-cool);-webkit-background-clip:text;background-clip:text;color:transparent;">Games</span></h1>
+    <p style="max-width:640px;color:var(--text-secondary);font-size:14.5px;margin-top:14px;">This list only moves when we're confident a score will hold up months later, not just at launch week hype. Filter by platform or genre if you're looking for something specific rather than scrolling the whole ranking.</p>
+  </div>
+</section>
+
+<section class="section-sm">
+  <div class="container-xl">
+    <div class="row g-5">
+
+      <div class="col-lg-8">
+        <div class="filter-bar" data-aos="fade-up">
+          <div class="row g-3 align-items-end">
+            <div class="col-md-6">
+              <label>Platform</label>
+              <select id="rankPlatform">
+                <option value="all">All Platforms</option>
+                <option value="pc">PC</option>
+                <option value="playstation">PlayStation</option>
+                <option value="xbox">Xbox</option>
+                <option value="switch">Switch</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label>Genre</label>
+              <select id="rankGenre">
+                <option value="all">All Genres</option>
+                <option value="rpg">RPG</option>
+                <option value="action">Action</option>
+                <option value="indie">Indie</option>
+                <option value="horror">Horror</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div id="rankList">
+          <div class="rank-row rank-item" data-platforms="pc playstation" data-genre="action" data-aos="fade-up">
+            <div class="rank-num">1</div>
+            <div class="rank-thumb"><img src="assets/images/games/red_dead_img_1.jpg" alt="Red Dead Redemption 2 cover" loading="lazy"></div>
+            <div class="rank-info"><h5>Red Dead Redemption 2</h5><span>Rockstar Games · 2018 · Open World</span></div>
+            <div class="rank-score"><i class="fa-solid fa-star"></i> 9.8</div>
+            <a href="reviews.html" class="stretched-link"></a>
+          </div>
+          <div class="rank-row rank-item" data-platforms="pc" data-genre="rpg" data-aos="fade-up" data-aos-delay="30">
+            <div class="rank-num">2</div>
+            <div class="rank-thumb"><img src="assets/images/games/baldurs_gate_img_1.jpg" alt="Baldur's Gate 3 cover" loading="lazy"></div>
+            <div class="rank-info"><h5>Baldur's Gate 3</h5><span>Larian Studios · 2023 · RPG</span></div>
+            <div class="rank-score"><i class="fa-solid fa-star"></i> 9.7</div>
+            <a href="review-details-bg3.html" class="stretched-link"></a>
+          </div>
+          <div class="rank-row rank-item" data-platforms="pc playstation" data-genre="rpg" data-aos="fade-up" data-aos-delay="60">
+            <div class="rank-num">3</div>
+            <div class="rank-thumb"><img src="assets/images/games/witcher_img_1.jpg" alt="The Witcher 3 cover" loading="lazy"></div>
+            <div class="rank-info"><h5>The Witcher 3: Wild Hunt</h5><span>CD Projekt Red · 2015 · RPG</span></div>
+            <div class="rank-score"><i class="fa-solid fa-star"></i> 9.7</div>
+            <a href="reviews.html" class="stretched-link"></a>
+          </div>
+          <div class="rank-row rank-item" data-platforms="pc playstation xbox" data-genre="action" data-aos="fade-up">
+            <div class="rank-num">4</div>
+            <div class="rank-thumb"><img src="assets/images/games/elden_ring_img_1.jpg" alt="Elden Ring cover" loading="lazy"></div>
+            <div class="rank-info"><h5>Elden Ring</h5><span>FromSoftware · 2022 · Action RPG</span></div>
+            <div class="rank-score"><i class="fa-solid fa-star"></i> 9.6</div>
+            <a href="review-details.html" class="stretched-link"></a>
+          </div>
+          <div class="rank-row rank-item" data-platforms="playstation" data-genre="action" data-aos="fade-up" data-aos-delay="30">
+            <div class="rank-num">5</div>
+            <div class="rank-thumb"><img src="assets/images/games/god_of_war_img_1.jpg" alt="God of War Ragnarok cover" loading="lazy"></div>
+            <div class="rank-info"><h5>God of War Ragnarök</h5><span>Santa Monica Studio · 2022 · Action Adventure</span></div>
+            <div class="rank-score"><i class="fa-solid fa-star"></i> 9.6</div>
+            <a href="reviews.html" class="stretched-link"></a>
+          </div>
+          <div class="rank-row rank-item" data-platforms="pc switch" data-genre="indie" data-aos="fade-up" data-aos-delay="60">
+            <div class="rank-num">6</div>
+            <div class="rank-thumb"><img src="assets/images/games/hollow_knight_img_1.jpg" alt="Hollow Knight cover" loading="lazy"></div>
+            <div class="rank-info"><h5>Hollow Knight</h5><span>Team Cherry · 2017 · Metroidvania</span></div>
+            <div class="rank-score"><i class="fa-solid fa-star"></i> 9.5</div>
+            <a href="reviews.html" class="stretched-link"></a>
+          </div>
+          <div class="rank-row rank-item" data-platforms="pc switch" data-genre="indie" data-aos="fade-up">
+            <div class="rank-num">7</div>
+            <div class="rank-thumb"><img src="assets/images/games/stardew_valley_img_1.jpg" alt="Stardew Valley cover" loading="lazy"></div>
+            <div class="rank-info"><h5>Stardew Valley</h5><span>ConcernedApe · 2016 · Simulation</span></div>
+            <div class="rank-score"><i class="fa-solid fa-star"></i> 9.4</div>
+            <a href="reviews.html" class="stretched-link"></a>
+          </div>
+          <div class="rank-row rank-item" data-platforms="pc playstation xbox" data-genre="horror" data-aos="fade-up" data-aos-delay="30">
+            <div class="rank-num">8</div>
+            <div class="rank-thumb"><img src="assets/images/games/alan_wake_img_1.jpg" alt="Alan Wake 2 cover" loading="lazy"></div>
+            <div class="rank-info"><h5>Alan Wake 2</h5><span>Remedy Entertainment · 2023 · Survival Horror</span></div>
+            <div class="rank-score"><i class="fa-solid fa-star"></i> 9.4</div>
+            <a href="reviews.html" class="stretched-link"></a>
+          </div>
+          <div class="rank-row rank-item" data-platforms="pc" data-genre="rpg" data-aos="fade-up" data-aos-delay="60">
+            <div class="rank-num">9</div>
+            <div class="rank-thumb"><img src="assets/images/games/clair_obscur_img_1.jpg" alt="Clair Obscur Expedition 33 cover" loading="lazy"></div>
+            <div class="rank-info"><h5>Clair Obscur: Expedition 33</h5><span>Sandfall Interactive · 2025 · Adventure RPG</span></div>
+            <div class="rank-score"><i class="fa-solid fa-star"></i> 9.4</div>
+            <a href="reviews.html" class="stretched-link"></a>
+          </div>
+          <div class="rank-row rank-item" data-platforms="pc" data-genre="indie" data-aos="fade-up">
+            <div class="rank-num">10</div>
+            <div class="rank-thumb"><img src="assets/images/games/hades_img_1.jpg" alt="Hades II cover" loading="lazy"></div>
+            <div class="rank-info"><h5>Hades II</h5><span>Supergiant Games · 2024 · Roguelike</span></div>
+            <div class="rank-score"><i class="fa-solid fa-star"></i> 9.3</div>
+            <a href="reviews.html" class="stretched-link"></a>
+          </div>
+          <div class="rank-row rank-item" data-platforms="pc playstation xbox" data-genre="horror" data-aos="fade-up" data-aos-delay="30">
+            <div class="rank-num">11</div>
+            <div class="rank-thumb"><img src="assets/images/games/resident_evil_img_1.jpg" alt="Resident Evil 4 Remake cover" loading="lazy"></div>
+            <div class="rank-info"><h5>Resident Evil 4 Remake</h5><span>Capcom · 2023 · Survival Horror</span></div>
+            <div class="rank-score"><i class="fa-solid fa-star"></i> 9.3</div>
+            <a href="reviews.html" class="stretched-link"></a>
+          </div>
+          <div class="rank-row rank-item" data-platforms="pc playstation" data-genre="rpg" data-aos="fade-up" data-aos-delay="60">
+            <div class="rank-num">12</div>
+            <div class="rank-thumb"><img src="assets/images/games/final_fantasy_img_1.jpg" alt="Final Fantasy VII Rebirth cover" loading="lazy"></div>
+            <div class="rank-info"><h5>Final Fantasy VII Rebirth</h5><span>Square Enix · 2024 · Action RPG</span></div>
+            <div class="rank-score"><i class="fa-solid fa-star"></i> 9.3</div>
+            <a href="reviews.html" class="stretched-link"></a>
+          </div>
+        </div>
+        <p id="noRankResults" class="text-center" style="display:none;padding:40px 0;color:var(--text-muted);">No games match these filters.</p>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="sidebar-card" style="position:sticky;top:110px;" data-aos="fade-left">
+          <h6>How We Rank</h6>
+          <p style="font-size:13.5px;color:var(--text-secondary);">Rankings combine our editor score with sub-scores for gameplay, story, and technical performance. Scores are revisited after major patches or expansions.</p>
+          <div class="divider-glow" style="margin:20px 0;"></div>
+          <h6>Jump To</h6>
+          <ul style="font-size:13.5px;">
+            <li class="mb-2"><a href="reviews.html" class="text-cyan">All Reviews →</a></li>
+            <li class="mb-2"><a href="latest.html" class="text-cyan">Latest Reviews →</a></li>
+            <li><a href="categories.html" class="text-cyan">Browse By Genre →</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="pc-footer">
+  <div class="container-xl">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6 footer-col">
+        <a href="index.html" class="pc-logo" style="margin-bottom:16px;display:inline-flex;"><span class="logo-mark"><i class="fa-solid fa-cloud-bolt"></i></span>Pixel<span class="accent">Cloudz</span></a>
+        <p>Honest, in-depth video game reviews, ratings, and platform availability for players who want the real story before they hit play.</p>
+     
+      </div>
+      <div class="col-lg-2 col-md-6 footer-col"><h6>Quick Links</h6><ul><li><a href="index.html">Home</a></li><li><a href="reviews.html">Reviews</a></li><li><a href="top-rated.html">Top Rated</a></li><li><a href="latest.html">Latest</a></li><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="col-lg-2 col-md-6 footer-col"><h6>Categories</h6><ul><li><a href="categories.html">Action</a></li><li><a href="categories.html">RPG</a></li><li><a href="categories.html">Open World</a></li><li><a href="categories.html">Horror</a></li><li><a href="categories.html">Indie</a></li></ul></div>
+      <div class="col-lg-2 col-md-6 footer-col"><h6>Platforms</h6><ul><li><a href="platforms.html">Steam</a></li><li><a href="platforms.html">PlayStation 5</a></li><li><a href="platforms.html">Xbox Series X</a></li><li><a href="platforms.html">Nintendo Switch</a></li><li><a href="platforms.html">PC</a></li></ul></div>
+      <div class="col-lg-2 col-md-6 footer-col">
+        <h6>Contact</h6>
+        <ul class="footer-contact">
+          <li><i class="fa-solid fa-location-dot"></i> Paulay Ede u. 55, 1061 Budapest, Hungary</li>
+          <li><i class="fa-solid fa-phone"></i> +36 70 318 6356</li>
+          <li><i class="fa-solid fa-envelope"></i> contact@pixelcloudz.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 PixelCloudz. All rights reserved.</p>
+      <p><a href="privacy-policy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="terms.html">Terms &amp; Conditions</a> &nbsp;·&nbsp; <a href="disclaimer.html">Disclaimer</a></p>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="./assets/js/jquery.js"></script>
+<script src="./assets/js/bootstrap.js"></script>
+<script src="./assets/js/fontawsome.js"></script>
+  <script src="./assets/js/aos.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+  $(function(){
+    function filterRanks(){
+      const platform = $("#rankPlatform").val();
+      const genre = $("#rankGenre").val();
+      let visible = 0;
+      $(".rank-item").each(function(){
+        const p = ($(this).data("platforms") || "").toString();
+        const g = $(this).data("genre");
+        let show = true;
+        if (platform !== "all" && p.indexOf(platform) === -1) show = false;
+        if (genre !== "all" && g !== genre) show = false;
+        $(this).toggle(show);
+        if (show) visible++;
+      });
+      $("#noRankResults").toggle(visible === 0);
+    }
+    $("#rankPlatform, #rankGenre").on("change", filterRanks);
+  });
+</script>
+</body>
+</html>
