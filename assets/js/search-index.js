@@ -46,7 +46,7 @@ const PC_SEARCH_INDEX = [
   },
   {
     "title": "Baldur's Gate 3",
-    "url": "review-details-bg3.html",
+    "url": "review-details-baldurs-gate.html",
     "type": "RPG"
   },
   {
