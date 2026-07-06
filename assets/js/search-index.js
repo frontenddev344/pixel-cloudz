@@ -41,7 +41,7 @@ const PC_SEARCH_INDEX = [
   },
   {
     "title": "Elden Ring",
-    "url": "review-details.html",
+    "url": "review-details-elden-ring.html",
     "type": "Action RPG"
   },
   {
