@@ -25,10 +25,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <!-- Vendors -->
-  <link rel="stylesheet" href="./assets/css/bootstrap.css">
-  <link rel="stylesheet" href="./assets/css/fontawsome.css">
-<link rel="stylesheet" href="./assets/css/swiper.css">
-  <link rel="stylesheet" href="./assets/css/aos.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 <!-- Core -->
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="assets/css/responsive.css">
@@ -40,8 +40,8 @@
   "@type": "Organization",
   "name": "PixelCloudz",
   "url": "https://pixelcloudz.com",
-  "logo": "https://pixelcloudz.com/assets/images/icons/logo.png",
-  "sameAs": ["https://twitter.com/pixelcloudz","https://facebook.com/pixelcloudz","https://instagram.com/pixelcloudz"]
+  "logo": "https://pixelcloudz.com/assets/images/icons/favicon.png",
+  "sameAs": []
 }
 </script>
 </head>
@@ -71,7 +71,8 @@
 <!-- Search overlay -->
 <div class="pc-search-overlay">
   <div class="pc-search-box">
-    <input type="text" class="pc-search-input" placeholder="Search games, reviews, platforms...">
+    <input type="text" class="pc-search-input" placeholder="Search games, reviews, platforms..." autocomplete="off">
+    <div class="pc-search-results" id="pcSearchResults"></div>
     <span class="pc-search-close"><i class="fa-solid fa-xmark"></i> Close</span>
   </div>
 </div>
@@ -94,8 +95,8 @@
 </div>
 
 <!-- ============ HERO ============ -->
-<section class="pc-hero" >
-  <div class="hero-bg-image" style="background-image: url(./assets/images/home_banner.png);"></div>
+<section class="pc-hero">
+  <div class="hero-bg-image" style="background-image: url(./assets/images/games/home_banner.png);"></div>
   <div class="hero-particles"></div>
   <div class="container-xl pc-hero-content">
     <div class="eyebrow" data-aos="fade-down"><i class="fa-solid fa-gamepad"></i> Reviews, Ratings &amp; Platform Guides</div>
@@ -106,10 +107,9 @@
       <a href="top-rated.html" class="btn-outline-neon">Top Rated Games <i class="fa-solid fa-trophy"></i></a>
     </div>
     <div class="pc-hero-stats counter-group" data-aos="fade-up" data-aos-delay="300">
-      <div class="stat"><div class="num"><span data-counter="1250" data-suffix="+">0</span></div><div class="lbl">Games Reviewed</div></div>
+      <div class="stat"><div class="num"><span data-counter="24">0</span></div><div class="lbl">Games Reviewed</div></div>
       <div class="stat"><div class="num"><span data-counter="14">0</span></div><div class="lbl">Platforms Covered</div></div>
-      <div class="stat"><div class="num"><span data-counter="98" data-suffix="%">0</span></div><div class="lbl">Reader Trust Score</div></div>
-      <div class="stat"><div class="num"><span data-counter="3.4" data-suffix="M">0</span></div><div class="lbl">Monthly Readers</div></div>
+      <div class="stat"><div class="num"><span data-counter="18">0</span></div><div class="lbl">Genres Covered</div></div>
     </div>
   </div>
   <div class="scroll-cue"><div class="mouse"></div>Scroll</div>
@@ -161,7 +161,7 @@
             <p class="card-desc">Night City's redemption arc — Phantom Liberty turned this into a must-play.</p>
             <div class="card-cta"><span class="read-review">Read Review <i class="fa-solid fa-arrow-right"></i></span></div>
           </div>
-          <a href="reviews.html" class="stretched-link" style="position:absolute;inset:0;"></a>
+          <a href="review-details-cyberpunk-2077.html" class="stretched-link" style="position:absolute;inset:0;"></a>
         </div>
       </div>
 
@@ -197,7 +197,7 @@
             <p class="card-desc">Punishing in the best way, and it looks incredible doing it.</p>
             <div class="card-cta"><span class="read-review">Read Review <i class="fa-solid fa-arrow-right"></i></span></div>
           </div>
-          <a href="reviews.html" class="stretched-link" style="position:absolute;inset:0;"></a>
+          <a href="review-details-black-myth-wukong.html" class="stretched-link" style="position:absolute;inset:0;"></a>
         </div>
       </div>
 
@@ -215,7 +215,7 @@
             <p class="card-desc">Came out of nowhere for us this year. Don't sleep on this one.</p>
             <div class="card-cta"><span class="read-review">Read Review <i class="fa-solid fa-arrow-right"></i></span></div>
           </div>
-          <a href="reviews.html" class="stretched-link" style="position:absolute;inset:0;"></a>
+          <a href="review-details-clair-obscur-expedition-33.html" class="stretched-link" style="position:absolute;inset:0;"></a>
         </div>
       </div>
 
@@ -233,7 +233,7 @@
             <p class="card-desc">Chaotic, hilarious third-person co-op warfare for managed democracy.</p>
             <div class="card-cta"><span class="read-review">Read Review <i class="fa-solid fa-arrow-right"></i></span></div>
           </div>
-          <a href="reviews.html" class="stretched-link" style="position:absolute;inset:0;"></a>
+          <a href="review-details-helldivers-2.html" class="stretched-link" style="position:absolute;inset:0;"></a>
         </div>
       </div>
 
@@ -251,7 +251,7 @@
             <p class="card-desc">Bigger than the first remake in every direction, for better and worse.</p>
             <div class="card-cta"><span class="read-review">Read Review <i class="fa-solid fa-arrow-right"></i></span></div>
           </div>
-          <a href="reviews.html" class="stretched-link" style="position:absolute;inset:0;"></a>
+          <a href="review-details-final-fantasy-vii-rebirth.html" class="stretched-link" style="position:absolute;inset:0;"></a>
         </div>
       </div>
 
@@ -269,7 +269,7 @@
             <p class="card-desc">The combat clicks hard once parrying stops feeling like guesswork.</p>
             <div class="card-cta"><span class="read-review">Read Review <i class="fa-solid fa-arrow-right"></i></span></div>
           </div>
-          <a href="reviews.html" class="stretched-link" style="position:absolute;inset:0;"></a>
+          <a href="review-details-stellar-blade.html" class="stretched-link" style="position:absolute;inset:0;"></a>
         </div>
       </div>
 
@@ -299,7 +299,7 @@
             <p class="card-desc">Way more systems than the first game, and somehow less janky too.</p>
             <div class="card-cta"><span class="read-review">Read Review <i class="fa-solid fa-arrow-right"></i></span></div>
           </div>
-          <a href="reviews.html" class="stretched-link" style="position:absolute;inset:0;"></a>
+          <a href="review-details-kingdom-come-deliverance-2.html" class="stretched-link" style="position:absolute;inset:0;"></a>
         </div>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
@@ -311,7 +311,7 @@
             <p class="card-desc">Slower, heavier, and shield-driven — a medieval reinvention of the Slayer.</p>
             <div class="card-cta"><span class="read-review">Read Review <i class="fa-solid fa-arrow-right"></i></span></div>
           </div>
-          <a href="reviews.html" class="stretched-link" style="position:absolute;inset:0;"></a>
+          <a href="review-details-doom-the-dark-ages.html" class="stretched-link" style="position:absolute;inset:0;"></a>
         </div>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
@@ -323,7 +323,7 @@
             <p class="card-desc">This is what an Indiana Jones game should've felt like years ago.</p>
             <div class="card-cta"><span class="read-review">Read Review <i class="fa-solid fa-arrow-right"></i></span></div>
           </div>
-          <a href="reviews.html" class="stretched-link" style="position:absolute;inset:0;"></a>
+          <a href="review-details-indiana-jones-great-circle.html" class="stretched-link" style="position:absolute;inset:0;"></a>
         </div>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="fade-up">
@@ -335,7 +335,7 @@
             <p class="card-desc">Now on PC — a stunning open-world samurai epic set in feudal Japan.</p>
             <div class="card-cta"><span class="read-review">Read Review <i class="fa-solid fa-arrow-right"></i></span></div>
           </div>
-          <a href="reviews.html" class="stretched-link" style="position:absolute;inset:0;"></a>
+          <a href="review-details-ghost-of-tsushima.html" class="stretched-link" style="position:absolute;inset:0;"></a>
         </div>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
@@ -347,7 +347,7 @@
             <p class="card-desc">The weather system alone changes how you approach every hunt.</p>
             <div class="card-cta"><span class="read-review">Read Review <i class="fa-solid fa-arrow-right"></i></span></div>
           </div>
-          <a href="reviews.html" class="stretched-link" style="position:absolute;inset:0;"></a>
+          <a href="review-details-monster-hunter-wilds.html" class="stretched-link" style="position:absolute;inset:0;"></a>
         </div>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
@@ -359,7 +359,7 @@
             <p class="card-desc">Josef Fares' co-op follow-up to It Takes Two swaps genres every level.</p>
             <div class="card-cta"><span class="read-review">Read Review <i class="fa-solid fa-arrow-right"></i></span></div>
           </div>
-          <a href="reviews.html" class="stretched-link" style="position:absolute;inset:0;"></a>
+          <a href="review-details-split-fiction.html" class="stretched-link" style="position:absolute;inset:0;"></a>
         </div>
       </div>
     </div>
@@ -385,7 +385,7 @@
           <div class="game-card">
             <div class="card-media"><span class="hover-tint"></span><span class="card-rating-badge"><i class="fa-solid fa-star"></i> 9.8</span><img src="assets/images/games/red_dead_img_1.jpg" alt="Red Dead Redemption 2 cover" loading="lazy"></div>
             <div class="card-body"><h3 class="card-title">Red Dead Redemption 2</h3><div class="card-meta"><span>2018</span><span>Rockstar Games</span></div><p class="card-desc">Still the game we measure every open-world release against.</p></div>
-            <a href="reviews.html" class="stretched-link" style="position:absolute;inset:0;"></a>
+            <a href="review-details-red-dead-redemption-2.html" class="stretched-link" style="position:absolute;inset:0;"></a>
           </div>
         </div>
 
@@ -393,7 +393,7 @@
           <div class="game-card">
             <div class="card-media"><span class="hover-tint"></span><span class="card-rating-badge"><i class="fa-solid fa-star"></i> 9.7</span><img src="assets/images/games/witcher_img_1.jpg" alt="The Witcher 3 cover" loading="lazy"></div>
             <div class="card-body"><h3 class="card-title">The Witcher 3: Wild Hunt</h3><div class="card-meta"><span>2015</span><span>CD Projekt Red</span></div><p class="card-desc">Still the benchmark for open-world RPG storytelling a decade later.</p></div>
-            <a href="reviews.html" class="stretched-link" style="position:absolute;inset:0;"></a>
+            <a href="review-details-the-witcher-3.html" class="stretched-link" style="position:absolute;inset:0;"></a>
           </div>
         </div>
 
@@ -401,31 +401,31 @@
           <div class="game-card">
             <div class="card-media"><span class="hover-tint"></span><span class="card-rating-badge"><i class="fa-solid fa-star"></i> 9.6</span><img src="assets/images/games/god_of_war_img_1.jpg" alt="God of War Ragnarok cover" loading="lazy"></div>
             <div class="card-body"><h3 class="card-title">God of War Ragnarök</h3><div class="card-meta"><span>2022</span><span>Santa Monica Studio</span></div><p class="card-desc">Sticks the landing on a story that could've easily fumbled the ending.</p></div>
-            <a href="reviews.html" class="stretched-link" style="position:absolute;inset:0;"></a>
+            <a href="review-details-god-of-war-ragnarok.html" class="stretched-link" style="position:absolute;inset:0;"></a>
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="game-card">
-            <div class="card-media"><span class="hover-tint"></span><span class="card-rating-badge"><i class="fa-solid fa-star"></i> 9.5</span><img src="assets/images/games/hollow_knight_img_1.jpg" alt="Hollow Knight cover" loading="lazy"></div>
-            <div class="card-body"><h3 class="card-title">Hollow Knight</h3><div class="card-meta"><span>2017</span><span>Team Cherry</span></div><p class="card-desc">A dense, beautifully animated metroidvania with real bite.</p></div>
-            <a href="reviews.html" class="stretched-link" style="position:absolute;inset:0;"></a>
+            <div class="card-media"><span class="hover-tint"></span><span class="card-rating-badge"><i class="fa-solid fa-star"></i> 9.5</span><img src="assets/images/games/hollow_knight_img_1.jpg" alt="God of War Ragnarok cover" loading="lazy"></div>
+            <div class="card-body"><h3 class="card-title">Hollow Knoight</h3><div class="card-meta"><span>2017</span><span>Team Cherry</span></div><p class="card-desc">Rewards patience with unforgettable discoveries hidden beneath one of gaming's most atmospheric worlds.</p></div>
+            <a href="review-details-hollow-knight.html" class="stretched-link" style="position:absolute;inset:0;"></a>
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="game-card">
-            <div class="card-media"><span class="hover-tint"></span><span class="card-rating-badge"><i class="fa-solid fa-star"></i> 9.4</span><img src="assets/images/games/alan_wake_img_1.jpg" alt="Alan Wake 2 cover" loading="lazy"></div>
-            <div class="card-body"><h3 class="card-title">Alan Wake 2</h3><div class="card-meta"><span>2023</span><span>Remedy Entertainment</span></div><p class="card-desc">A genuinely unsettling survival-horror thriller told across two timelines.</p></div>
-            <a href="reviews.html" class="stretched-link" style="position:absolute;inset:0;"></a>
+            <div class="card-media"><span class="hover-tint"></span><span class="card-rating-badge"><i class="fa-solid fa-star"></i> 9.4</span><img src="assets/images/games/stardew_valley_img_1.jpg" alt="God of War Ragnarok cover" loading="lazy"></div>
+            <div class="card-body"><h3 class="card-title">Stardew Valley</h3><div class="card-meta"><span>2022</span><span>ConcernedApe</span></div><p class="card-desc">Proves that slowing down can be just as rewarding as saving the world.</p></div>
+            <a href="review-details-stardew-valley.html" class="stretched-link" style="position:absolute;inset:0;"></a>
           </div>
         </div>
 
         <div class="swiper-slide">
           <div class="game-card">
-            <div class="card-media"><span class="hover-tint"></span><span class="card-rating-badge"><i class="fa-solid fa-star"></i> 9.3</span><img src="assets/images/games/hades_img_1.jpg" alt="Hades II cover" loading="lazy"></div>
-            <div class="card-body"><h3 class="card-title">Hades II</h3><div class="card-meta"><span>2024</span><span>Supergiant Games</span></div><p class="card-desc">A roguelike sequel that somehow improves on a near-perfect original.</p></div>
-            <a href="reviews.html" class="stretched-link" style="position:absolute;inset:0;"></a>
+            <div class="card-media"><span class="hover-tint"></span><span class="card-rating-badge"><i class="fa-solid fa-star"></i> 9.3</span><img src="assets/images/games/hades_img_1.jpg" alt="God of War Ragnarok cover" loading="lazy"></div>
+            <div class="card-body"><h3 class="card-title">Hades II</h3><div class="card-meta"><span>2024</span><span>Supergiant Games</span></div><p class="card-desc">Builds on an already brilliant formula with sharper combat and irresistible replayability.</p></div>
+            <a href="review-details-hades-2.html" class="stretched-link" style="position:absolute;inset:0;"></a>
           </div>
         </div>
 
@@ -447,20 +447,20 @@
       <p class="section-sub">Wherever you actually own your games, we're tracking prices and libraries there.</p>
     </div>
     <div class="row g-3 g-md-4">
-      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in"><a href="platforms.html" class="platform-card d-block"><div class="p-icon"><i class="fa-brands fa-steam"></i></div><h5>Steam</h5><div class="p-count">412 games</div></a></div>
-      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="50"><a href="platforms.html" class="platform-card d-block"><div class="p-icon"><i class="fa-brands fa-playstation"></i></div><h5>PlayStation 5</h5><div class="p-count">186 games</div></a></div>
-      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="100"><a href="platforms.html" class="platform-card d-block"><div class="p-icon"><i class="fa-brands fa-xbox"></i></div><h5>Xbox Series X</h5><div class="p-count">174 games</div></a></div>
-      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="150"><a href="platforms.html" class="platform-card d-block"><div class="p-icon"><i class="fa-solid fa-n"></i></div><h5>Nintendo Switch</h5><div class="p-count">203 games</div></a></div>
-      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in"><a href="platforms.html" class="platform-card d-block"><div class="p-icon"><i class="fa-solid fa-desktop"></i></div><h5>PC</h5><div class="p-count">498 games</div></a></div>
-      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="50"><a href="platforms.html" class="platform-card d-block"><div class="p-icon"><i class="fa-brands fa-apple"></i></div><h5>Mac</h5><div class="p-count">87 games</div></a></div>
-      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="100"><a href="platforms.html" class="platform-card d-block"><div class="p-icon"><i class="fa-brands fa-epic-games"></i></div><h5>Epic Games</h5><div class="p-count">156 games</div></a></div>
-      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="150"><a href="platforms.html" class="platform-card d-block"><div class="p-icon"><i class="fa-solid fa-e"></i></div><h5>EA App</h5><div class="p-count">64 games</div></a></div>
-      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in"><a href="platforms.html" class="platform-card d-block"><div class="p-icon"><i class="fa-solid fa-u"></i></div><h5>Ubisoft Connect</h5><div class="p-count">78 games</div></a></div>
-      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="50"><a href="platforms.html" class="platform-card d-block"><div class="p-icon"><i class="fa-solid fa-b"></i></div><h5>Battle.net</h5><div class="p-count">32 games</div></a></div>
-      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="100"><a href="platforms.html" class="platform-card d-block"><div class="p-icon"><i class="fa-solid fa-g"></i></div><h5>GOG</h5><div class="p-count">119 games</div></a></div>
-      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="150"><a href="platforms.html" class="platform-card d-block"><div class="p-icon"><i class="fa-solid fa-cloud"></i></div><h5>Amazon Luna</h5><div class="p-count">45 games</div></a></div>
-      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in"><a href="platforms.html" class="platform-card d-block"><div class="p-icon"><i class="fa-solid fa-tv"></i></div><h5>GeForce NOW</h5><div class="p-count">211 games</div></a></div>
-      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="50"><a href="platforms.html" class="platform-card d-block"><div class="p-icon"><i class="fa-brands fa-xbox"></i></div><h5>Xbox Cloud Gaming</h5><div class="p-count">142 games</div></a></div>
+      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in"><a href="platforms.html" class="platform-card d-block"><div class="p-icon"><i class="fa-brands fa-steam"></i></div><h5>Steam</h5><div class="p-count">21 games</div></a></div>
+      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="50"><a href="platforms.html" class="platform-card d-block"><div class="p-icon"><i class="fa-brands fa-playstation"></i></div><h5>PlayStation 5</h5><div class="p-count">23 games</div></a></div>
+      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="100"><a href="platforms.html" class="platform-card d-block"><div class="p-icon"><i class="fa-brands fa-xbox"></i></div><h5>Xbox Series X</h5><div class="p-count">16 games</div></a></div>
+      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="150"><a href="platforms.html" class="platform-card d-block"><div class="p-icon"><i class="fa-solid fa-n"></i></div><h5>Nintendo Switch</h5><div class="p-count">5 games</div></a></div>
+      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in"><a href="platforms.html" class="platform-card d-block"><div class="p-icon"><i class="fa-solid fa-desktop"></i></div><h5>PC</h5><div class="p-count">21 games</div></a></div>
+      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="50"><a href="platforms.html" class="platform-card d-block"><div class="p-icon"><i class="fa-brands fa-apple"></i></div><h5>Mac</h5><div class="p-count">4 games</div></a></div>
+      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="100"><a href="platforms.html" class="platform-card d-block"><div class="p-icon"><i class="fa-brands fa-epic-games"></i></div><h5>Epic Games</h5><div class="p-count">13 games</div></a></div>
+      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="150"><a href="platforms.html" class="platform-card d-block"><div class="p-icon"><i class="fa-solid fa-e"></i></div><h5>EA App</h5><div class="p-count">Coverage varies</div></a></div>
+      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in"><a href="platforms.html" class="platform-card d-block"><div class="p-icon"><i class="fa-solid fa-u"></i></div><h5>Ubisoft Connect</h5><div class="p-count">Coverage varies</div></a></div>
+      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="50"><a href="platforms.html" class="platform-card d-block"><div class="p-icon"><i class="fa-solid fa-b"></i></div><h5>Battle.net</h5><div class="p-count">Coverage varies</div></a></div>
+      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="100"><a href="platforms.html" class="platform-card d-block"><div class="p-icon"><i class="fa-solid fa-g"></i></div><h5>GOG</h5><div class="p-count">Coverage varies</div></a></div>
+      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="150"><a href="platforms.html" class="platform-card d-block"><div class="p-icon"><i class="fa-solid fa-cloud"></i></div><h5>Amazon Luna</h5><div class="p-count">Coverage varies</div></a></div>
+      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in"><a href="platforms.html" class="platform-card d-block"><div class="p-icon"><i class="fa-solid fa-tv"></i></div><h5>GeForce NOW</h5><div class="p-count">14 games</div></a></div>
+      <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="50"><a href="platforms.html" class="platform-card d-block"><div class="p-icon"><i class="fa-brands fa-xbox"></i></div><h5>Xbox Cloud Gaming</h5><div class="p-count">Coverage varies</div></a></div>
     </div>
   </div>
 </section>
@@ -474,24 +474,24 @@
       <p class="section-sub">Not sure what you're in the mood for? Start here instead.</p>
     </div>
     <div class="row g-3">
-      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up"><a href="categories.html" class="category-chip"><div class="c-icon"><i class="fa-solid fa-explosion"></i></div><div><h6>Action</h6><small>214 games</small></div></a></div>
-      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="30"><a href="categories.html" class="category-chip"><div class="c-icon"><i class="fa-solid fa-map"></i></div><div><h6>Adventure</h6><small>189 games</small></div></a></div>
-      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="60"><a href="categories.html" class="category-chip"><div class="c-icon"><i class="fa-solid fa-crosshairs"></i></div><div><h6>FPS</h6><small>96 games</small></div></a></div>
-      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="90"><a href="categories.html" class="category-chip"><div class="c-icon"><i class="fa-solid fa-hat-wizard"></i></div><div><h6>RPG</h6><small>247 games</small></div></a></div>
-      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up"><a href="categories.html" class="category-chip"><div class="c-icon"><i class="fa-solid fa-earth-americas"></i></div><div><h6>Open World</h6><small>133 games</small></div></a></div>
-      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="30"><a href="categories.html" class="category-chip"><div class="c-icon"><i class="fa-solid fa-ghost"></i></div><div><h6>Horror</h6><small>78 games</small></div></a></div>
-      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="60"><a href="categories.html" class="category-chip"><div class="c-icon"><i class="fa-solid fa-chess"></i></div><div><h6>Strategy</h6><small>101 games</small></div></a></div>
-      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="90"><a href="categories.html" class="category-chip"><div class="c-icon"><i class="fa-solid fa-futbol"></i></div><div><h6>Sports</h6><small>64 games</small></div></a></div>
-      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up"><a href="categories.html" class="category-chip"><div class="c-icon"><i class="fa-solid fa-industry"></i></div><div><h6>Simulation</h6><small>88 games</small></div></a></div>
-      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="30"><a href="categories.html" class="category-chip"><div class="c-icon"><i class="fa-solid fa-seedling"></i></div><div><h6>Indie</h6><small>312 games</small></div></a></div>
-      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="60"><a href="categories.html" class="category-chip"><div class="c-icon"><i class="fa-solid fa-users"></i></div><div><h6>MMORPG</h6><small>42 games</small></div></a></div>
-      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="90"><a href="categories.html" class="category-chip"><div class="c-icon"><i class="fa-solid fa-flag-checkered"></i></div><div><h6>Racing</h6><small>57 games</small></div></a></div>
-      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up"><a href="categories.html" class="category-chip"><div class="c-icon"><i class="fa-solid fa-puzzle-piece"></i></div><div><h6>Puzzle</h6><small>73 games</small></div></a></div>
-      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="30"><a href="categories.html" class="category-chip"><div class="c-icon"><i class="fa-solid fa-shield-halved"></i></div><div><h6>Soulslike</h6><small>39 games</small></div></a></div>
-      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="60"><a href="categories.html" class="category-chip"><div class="c-icon"><i class="fa-solid fa-fire"></i></div><div><h6>Survival</h6><small>91 games</small></div></a></div>
-      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="90"><a href="categories.html" class="category-chip"><div class="c-icon"><i class="fa-solid fa-parachute-box"></i></div><div><h6>Battle Royale</h6><small>18 games</small></div></a></div>
-      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up"><a href="categories.html" class="category-chip"><div class="c-icon"><i class="fa-solid fa-dungeon"></i></div><div><h6>Metroidvania</h6><small>54 games</small></div></a></div>
-      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="30"><a href="categories.html" class="category-chip"><div class="c-icon"><i class="fa-solid fa-arrows-rotate"></i></div><div><h6>Roguelike</h6><small>68 games</small></div></a></div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up"><a href="categories.html" class="category-chip"><div class="c-icon"><i class="fa-solid fa-explosion"></i></div><div><h6>Action</h6><small>5 games</small></div></a></div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="30"><a href="categories.html" class="category-chip"><div class="c-icon"><i class="fa-solid fa-map"></i></div><div><h6>Adventure</h6><small>5 games</small></div></a></div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="60"><a href="categories.html" class="category-chip"><div class="c-icon"><i class="fa-solid fa-crosshairs"></i></div><div><h6>FPS</h6><small>1 games</small></div></a></div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="90"><a href="categories.html" class="category-chip"><div class="c-icon"><i class="fa-solid fa-hat-wizard"></i></div><div><h6>RPG</h6><small>7 games</small></div></a></div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up"><a href="categories.html" class="category-chip"><div class="c-icon"><i class="fa-solid fa-earth-americas"></i></div><div><h6>Open World</h6><small>4 games</small></div></a></div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="30"><a href="categories.html" class="category-chip"><div class="c-icon"><i class="fa-solid fa-ghost"></i></div><div><h6>Horror</h6><small>2 games</small></div></a></div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="60"><a href="categories.html" class="category-chip"><div class="c-icon"><i class="fa-solid fa-chess"></i></div><div><h6>Strategy</h6><small>0 games</small></div></a></div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="90"><a href="categories.html" class="category-chip"><div class="c-icon"><i class="fa-solid fa-futbol"></i></div><div><h6>Sports</h6><small>0 games</small></div></a></div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up"><a href="categories.html" class="category-chip"><div class="c-icon"><i class="fa-solid fa-industry"></i></div><div><h6>Simulation</h6><small>1 games</small></div></a></div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="30"><a href="categories.html" class="category-chip"><div class="c-icon"><i class="fa-solid fa-seedling"></i></div><div><h6>Indie</h6><small>0 games</small></div></a></div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="60"><a href="categories.html" class="category-chip"><div class="c-icon"><i class="fa-solid fa-users"></i></div><div><h6>MMORPG</h6><small>0 games</small></div></a></div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="90"><a href="categories.html" class="category-chip"><div class="c-icon"><i class="fa-solid fa-flag-checkered"></i></div><div><h6>Racing</h6><small>0 games</small></div></a></div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up"><a href="categories.html" class="category-chip"><div class="c-icon"><i class="fa-solid fa-puzzle-piece"></i></div><div><h6>Puzzle</h6><small>0 games</small></div></a></div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="30"><a href="categories.html" class="category-chip"><div class="c-icon"><i class="fa-solid fa-shield-halved"></i></div><div><h6>Soulslike</h6><small>2 games</small></div></a></div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="60"><a href="categories.html" class="category-chip"><div class="c-icon"><i class="fa-solid fa-fire"></i></div><div><h6>Survival</h6><small>0 games</small></div></a></div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="90"><a href="categories.html" class="category-chip"><div class="c-icon"><i class="fa-solid fa-parachute-box"></i></div><div><h6>Battle Royale</h6><small>0 games</small></div></a></div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up"><a href="categories.html" class="category-chip"><div class="c-icon"><i class="fa-solid fa-dungeon"></i></div><div><h6>Metroidvania</h6><small>1 games</small></div></a></div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="30"><a href="categories.html" class="category-chip"><div class="c-icon"><i class="fa-solid fa-arrows-rotate"></i></div><div><h6>Roguelike</h6><small>1 games</small></div></a></div>
     </div>
   </div>
 </section>
@@ -501,20 +501,21 @@
   <div class="container-xl">
     <div class="section-head flex" data-aos="fade-up">
       <div>
-        <div class="eyebrow">What's Going On</div>
-        <h2 class="section-title">Gaming <span class="grad-text">News</span></h2>
-        <p class="section-sub">Stuff worth knowing about, kept short on purpose.</p>
+        <div class="eyebrow">From The Review Desk</div>
+        <h2 class="section-title">Recently <span class="grad-text">Published</span></h2>
+        <p class="section-sub">The latest reviews we've added to the site.</p>
       </div>
+      <a href="latest.html" class="btn-outline-neon btn-sm">All Latest <i class="fa-solid fa-arrow-right"></i></a>
     </div>
     <div class="row g-4">
       <div class="col-lg-4 col-md-6" data-aos="fade-up">
-        <div class="news-card"><img src="assets/images/news/news-1.jpg" alt="Industry showcase news" loading="lazy"><div class="n-body"><span class="n-tag">Industry</span><h5>Summer showcases reveal a packed 2026 release calendar</h5><span class="n-date">Jul 2, 2026</span></div></div>
+        <div class="news-card"><img src="assets/images/games/alan_wake_img_3.jpg" alt="Alan Wake 2 cover" loading="lazy"><div class="n-body"><span class="n-tag">Horror Review</span><h5>Alan Wake 2 is stranger — and scarier — than the original</h5><span class="n-date">Now on the site</span></div><a href="review-details-alan-wake-2.html" class="stretched-link" style="position:absolute;inset:0;"></a></div>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-        <div class="news-card"><img src="assets/images/news/news-2.jpg" alt="Esports news" loading="lazy"><div class="n-body"><span class="n-tag">Esports</span><h5>Valorant and Dota 2 circuits announce expanded prize pools</h5><span class="n-date">Jun 28, 2026</span></div></div>
+        <div class="news-card"><img src="assets/images/games/lies_of_p_img_3.jpg" alt="Lies of P cover" loading="lazy"><div class="n-body"><span class="n-tag">Soulslike Review</span><h5>Lies of P proves the Pinocchio premise was never the joke</h5><span class="n-date">Now on the site</span></div><a href="review-details-lies-of-p.html" class="stretched-link" style="position:absolute;inset:0;"></a></div>
       </div>
       <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="news-card"><img src="assets/images/news/news-3.jpg" alt="Hardware news" loading="lazy"><div class="n-body"><span class="n-tag">Hardware</span><h5>Next-gen handhelds are quietly reshaping cloud gaming demand</h5><span class="n-date">Jun 24, 2026</span></div></div>
+        <div class="news-card"><img src="assets/images/games/hollow_knight_img_3.jpg" alt="Hollow Knight cover" loading="lazy"><div class="n-body"><span class="n-tag">Metroidvania Review</span><h5>Hollow Knight still holds up as the genre's high bar</h5><span class="n-date">Now on the site</span></div><a href="review-details-hollow-knight.html" class="stretched-link" style="position:absolute;inset:0;"></a></div>
       </div>
     </div>
   </div>
@@ -543,13 +544,7 @@
       <div class="col-lg-4 col-md-6 footer-col">
         <a href="index.html" class="pc-logo" style="margin-bottom:16px;display:inline-flex;"><span class="logo-mark"><i class="fa-solid fa-cloud-bolt"></i></span>Pixel<span class="accent">Cloudz</span></a>
         <p>Honest, in-depth video game reviews, ratings, and platform availability for players who want the real story before they hit play.</p>
-        <div class="footer-social">
-          <a href="https://facebook.com/pixelcloudz" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="https://x.com/pixelcloudz" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="https://instagram.com/pixelcloudz" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://youtube.com/@pixelcloudz" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-          <a href="https://discord.gg/pixelcloudz" target="_blank" rel="noopener noreferrer" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
-        </div>
+       
       </div>
       <div class="col-lg-2 col-md-6 footer-col">
         <h6>Quick Links</h6>
@@ -605,12 +600,13 @@
 <button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
 
 <!-- Vendors -->
-<script src="./assets/js/jquery.js"></script>
-<script src="./assets/js/bootstrap.js"></script>
-<script src="./assets/js/fontawsome.js"></script>
-<script src="./assets/js/swiper.js"></script>
-  <script src="./assets/js/aos.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="assets/js/search-index.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/cookie-consent.js"></script>
 <script>
   new Swiper(".topRatedSwiper", {
     slidesPerView: 1.15,
@@ -619,8 +615,7 @@
     breakpoints: {
       576:{slidesPerView:1.6},
       768:{slidesPerView:2.3},
-      1024:{slidesPerView:3.2},
-      1280:{slidesPerView:4}
+      1024:{slidesPerView:3}
     }
   });
 </script>

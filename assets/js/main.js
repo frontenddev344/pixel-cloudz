@@ -60,6 +60,74 @@
       }
     });
 
+    /* ---------- Live site search (header) ---------- */
+    const $searchInput = $(".pc-search-input");
+    const $searchResults = $("#pcSearchResults");
+    const searchIndex = (typeof PC_SEARCH_INDEX !== "undefined") ? PC_SEARCH_INDEX : [];
+    let activeResultIndex = -1;
+
+    function renderResults(query) {
+      const q = query.trim().toLowerCase();
+      if (!q) {
+        $searchResults.removeClass("show").empty();
+        return;
+      }
+      const matches = searchIndex.filter(item => item.title.toLowerCase().includes(q)).slice(0, 8);
+      activeResultIndex = -1;
+      if (matches.length === 0) {
+        $searchResults.addClass("show").html('<div class="pc-search-empty">No matches for "' + $("<div>").text(query).html() + '". Try a different title.</div>');
+        return;
+      }
+      const html = matches.map((item, i) => {
+        const safeTitle = $("<div>").text(item.title).html();
+        const re = new RegExp("(" + q.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + ")", "ig");
+        const highlighted = safeTitle.replace(re, "<mark>$1</mark>");
+        return '<a href="' + item.url + '" class="pc-search-result" data-index="' + i + '">' +
+          '<span class="pc-search-result-title">' + highlighted + '</span>' +
+          '<span class="pc-search-result-type">' + item.type + '</span>' +
+        '</a>';
+      }).join("");
+      $searchResults.addClass("show").html(html);
+    }
+
+    $searchInput.on("input", function () {
+      renderResults($(this).val());
+    });
+
+    $searchInput.on("keydown", function (e) {
+      const $items = $searchResults.find(".pc-search-result");
+      if (e.key === "ArrowDown") {
+        e.preventDefault();
+        if ($items.length === 0) return;
+        activeResultIndex = Math.min(activeResultIndex + 1, $items.length - 1);
+        $items.removeClass("active").eq(activeResultIndex).addClass("active");
+      } else if (e.key === "ArrowUp") {
+        e.preventDefault();
+        if ($items.length === 0) return;
+        activeResultIndex = Math.max(activeResultIndex - 1, 0);
+        $items.removeClass("active").eq(activeResultIndex).addClass("active");
+      } else if (e.key === "Enter") {
+        e.preventDefault();
+        if (activeResultIndex >= 0 && $items.eq(activeResultIndex).length) {
+          window.location.href = $items.eq(activeResultIndex).attr("href");
+        } else if ($items.length > 0) {
+          window.location.href = $items.eq(0).attr("href");
+        }
+      }
+    });
+
+    // Reset search state whenever the overlay opens/closes
+    $(".pc-search-trigger").on("click", function () {
+      $searchInput.val("");
+      $searchResults.removeClass("show").empty();
+    });
+    $(".pc-search-close, .pc-search-overlay").on("click", function (e) {
+      if (e.target === this || $(e.target).hasClass("pc-search-close")) {
+        $searchInput.val("");
+        $searchResults.removeClass("show").empty();
+      }
+    });
+
     /* ---------- Hero particles ---------- */
     const $particleField = $(".hero-particles");
     if ($particleField.length) {

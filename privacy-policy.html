@@ -9,8 +9,8 @@
 <link rel="icon" href="assets/images/icons/favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/bootstrap.css">
-  <link rel="stylesheet" href="./assets/css/fontawsome.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
@@ -30,7 +30,7 @@
     </div>
   </div>
 </header>
-<div class="pc-search-overlay"><div class="pc-search-box"><input type="text" class="pc-search-input" placeholder="Search games, reviews, platforms..."><span class="pc-search-close"><i class="fa-solid fa-xmark"></i> Close</span></div></div>
+<div class="pc-search-overlay"><div class="pc-search-box"><input type="text" class="pc-search-input" placeholder="Search games, reviews, platforms..." autocomplete="off"><div class="pc-search-results" id="pcSearchResults"></div><span class="pc-search-close"><i class="fa-solid fa-xmark"></i> Close</span></div></div>
 <div class="pc-mobile-backdrop"></div>
 <div class="pc-mobile-menu">
   <div class="d-flex justify-content-between align-items-center mb-4">
@@ -51,37 +51,105 @@
 
 <section class="section">
   <div class="container-xl">
-    <div class="glass-panel p-4 p-md-5" style="max-width:900px;margin:0 auto;font-size:14.5px;color:var(--text-secondary);">
-      <p style="color:var(--text-muted);font-size:13px;">Last updated: July 6, 2026</p>
-      <p>This Privacy Policy describes how PixelCloudz.com ("PixelCloudz", "we", "us") collects, uses, and protects information when you visit our website.</p>
+    <div class="glass-panel p-4 p-md-5 legal-content" style="max-width:960px;margin:0 auto;font-size:14.5px;color:var(--text-secondary);">
+      <p style="color:var(--text-muted);font-size:13px;">Effective Date: July 2026</p>
+      <p>At <strong style="color:#fff;">PixelCloudz.com</strong>, we believe your privacy matters. Whether you're reading a review, comparing platform availability, or browsing for your next game, we're committed to handling your information responsibly.</p>
+      <p>This Privacy Policy explains what information we collect, how we use it, when it may be shared, and the choices available to you. By accessing or using PixelCloudz.com, you acknowledge that you have read and understood the practices described in this policy.</p>
+
+      <h5 style="color:#fff;margin-top:28px;">Data Controller</h5>
+      <p>PixelCloudz.com is responsible for the collection and processing of personal information described in this Privacy Policy.</p>
+      <p><strong style="color:#fff;">Address:</strong> Paulay Ede u. 55, 1061 Budapest, Hungary<br><strong style="color:#fff;">Phone:</strong> +36 70 318 6356</p>
+      <p>If you have questions about this Privacy Policy or wish to exercise any privacy rights available under applicable law, you may contact us using the information on our <a href="contact.html" style="color:var(--cyan);">Contact page</a>.</p>
 
       <h5 style="color:#fff;margin-top:28px;">Information We Collect</h5>
-      <p>We may collect information you voluntarily provide, such as your name and email address when subscribing to our newsletter or submitting a contact form. We also automatically collect standard technical data, including IP address, browser type, device information, and pages visited, via cookies and analytics tools.</p>
+      <p>Depending on how you interact with PixelCloudz.com, we may collect different types of information to operate our website and improve your browsing experience.</p>
+      <ul>
+        <li>Name and email address you voluntarily submit through our contact form or newsletter signup.</li>
+        <li>Technical information such as IP address, browser type, operating system, and device details.</li>
+        <li>Pages visited, referral sources, time spent on our website, and general browsing activity.</li>
+        <li>Cookie data and similar technologies that help improve website functionality and performance.</li>
+      </ul>
+      <p>We only collect information that is relevant to providing, maintaining, and improving our website and services.</p>
 
-      <h5 style="color:#fff;margin-top:28px;">How We Use Information</h5>
-      <p>We use collected information to operate and improve the site, respond to inquiries, send newsletters (only to those who opt in), and serve relevant advertising. We do not sell personal information to third parties.</p>
+      <h5 style="color:#fff;margin-top:28px;">Legal Basis for Processing (GDPR)</h5>
+      <p>If you are located in the European Economic Area (EEA), the United Kingdom, or another region where similar privacy laws apply, we process personal data only when we have an appropriate legal basis for doing so.</p>
+      <div class="table-responsive">
+        <table class="pc-table" style="margin-bottom:20px;">
+          <thead><tr><th>Purpose</th><th>Information Used</th><th>Legal Basis</th></tr></thead>
+          <tbody>
+            <tr><td>Responding to enquiries</td><td>Name, email, and submitted message</td><td>Legitimate Interest</td></tr>
+            <tr><td>Operating and maintaining the website</td><td>Technical and usage information</td><td>Legitimate Interest</td></tr>
+            <tr><td>Website analytics</td><td>Device, browser, and IP data</td><td>Consent where required by law</td></tr>
+            <tr><td>Advertising (Google AdSense)</td><td>Cookie and advertising identifiers</td><td>Consent where required by law</td></tr>
+            <tr><td>Security and fraud prevention</td><td>Technical information and IP address</td><td>Legitimate Interest</td></tr>
+            <tr><td>Meeting legal obligations</td><td>Information required by applicable law</td><td>Legal Obligation</td></tr>
+          </tbody>
+        </table>
+      </div>
 
-      <h5 style="color:#fff;margin-top:28px;">Cookies</h5>
-      <p>PixelCloudz uses cookies for analytics, site functionality, and advertising personalization. You can control or disable cookies through your browser settings, though some site features may not function properly without them.</p>
+      <h5 style="color:#fff;margin-top:28px;">How We Use Your Information</h5>
+      <ul>
+        <li>Respond to questions and reader enquiries.</li>
+        <li>Improve the quality, accuracy, and performance of our reviews and site content.</li>
+        <li>Understand how visitors interact with our website.</li>
+        <li>Maintain website security and prevent fraudulent activity.</li>
+        <li>Serve relevant advertising through Google AdSense and similar networks.</li>
+        <li>Comply with applicable legal and regulatory requirements.</li>
+      </ul>
+      <p>We never use your personal information for purposes that are inconsistent with this Privacy Policy.</p>
+
+      <h5 style="color:#fff;margin-top:28px;">Cookie Policy</h5>
+      <p>Like most modern websites, PixelCloudz.com uses cookies and similar technologies to improve website performance, remember visitor preferences, and better understand how our content is used.</p>
+      <ul>
+        <li><strong style="color:#fff;">Essential Cookies</strong> — required for basic operation, functionality, and security of the website.</li>
+        <li><strong style="color:#fff;">Analytics Cookies</strong> — help us understand visitor behavior, popular pages, and overall performance.</li>
+        <li><strong style="color:#fff;">Preference Cookies</strong> — remember settings to improve future visits.</li>
+        <li><strong style="color:#fff;">Advertising Cookies</strong> — used by Google AdSense and similar networks to serve and measure relevant ads.</li>
+      </ul>
+      <p>Most browsers allow you to manage or disable cookies through their settings. Restricting cookies may affect certain features or functionality of the website.</p>
 
       <h5 style="color:#fff;margin-top:28px;">Advertising and Google AdSense</h5>
-      <p>PixelCloudz may display advertising served by Google and other third-party advertising companies ("vendors"). Google's use of advertising cookies enables it and its partners to serve ads to visitors based on their visit to this site and/or other sites on the internet. These vendors may use cookies, web beacons, and similar technologies to collect information about your visits to this and other websites in order to provide relevant advertisements.</p>
+      <p>PixelCloudz may display advertising served by Google and other third-party advertising companies ("vendors"). Google's use of advertising cookies enables it and its partners to serve ads to visitors based on their visit to this site and/or other sites on the internet.</p>
       <p>You may opt out of personalized advertising by visiting <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer" style="color:var(--cyan);">Google's Ads Settings</a>. You can also review the Network Advertising Initiative's opt-out page or download the Google Analytics opt-out browser add-on to prevent data from being used by Google Analytics.</p>
 
-      <h5 style="color:#fff;margin-top:28px;">Third-Party Services</h5>
-      <p>We may use third-party services such as analytics providers and advertising networks that collect information under their own privacy policies. Some pages may contain affiliate links, for which we may earn a commission at no additional cost to you.</p>
+      <h5 style="color:#fff;margin-top:28px;">Affiliate Links</h5>
+      <p>Some pages may contain affiliate links to storefronts, hardware retailers, or subscription services. If you click one of these links and complete a purchase, we may receive a commission at no additional cost to you. Receiving affiliate compensation never determines our review scores, opinions, or editorial decisions.</p>
+      <p>When you interact with affiliate links, certain technical information (IP address, browser data, referral source, click activity) may be collected by affiliate networks or partners to verify referrals and process commissions. Information collected after you leave our website is governed by the privacy policy of the respective partner.</p>
 
-      <h5 style="color:#fff;margin-top:28px;">Data Security</h5>
-      <p>We take reasonable technical and organizational measures to protect your information, but no method of transmission over the internet is 100% secure.</p>
+      <h5 style="color:#fff;margin-top:28px;">Sharing Information with Trusted Partners</h5>
+      <p>We may share limited information with trusted third-party service providers when necessary to operate our website, improve our services, or support affiliate and advertising reporting — including website hosting, analytics, fraud detection, and affiliate program management. We do not sell or rent your personal information to third parties.</p>
 
-      <h5 style="color:#fff;margin-top:28px;">Your Rights</h5>
-      <p>Depending on your location, you may have rights to access, correct, or delete your personal data. To exercise these rights, contact us at contact@pixelcloudz.com.</p>
+      <h5 style="color:#fff;margin-top:28px;">International Privacy Rights</h5>
+      <p>Visitors from different countries may have additional privacy rights under local laws, including the General Data Protection Regulation (GDPR), the UK GDPR, the California Consumer Privacy Act (CCPA), and other applicable privacy legislation. Where required by law, we request your consent before using non-essential cookies for analytics or advertising.</p>
+      <p>Depending on your location, you may have the right to:</p>
+      <ul>
+        <li>Request access to your personal information.</li>
+        <li>Correct inaccurate or incomplete information.</li>
+        <li>Request deletion of eligible personal information.</li>
+        <li>Restrict or object to certain processing activities.</li>
+        <li>Withdraw consent at any time where consent is the legal basis.</li>
+        <li>Request a portable copy of eligible personal information.</li>
+        <li>Lodge a complaint with your local data protection authority.</li>
+      </ul>
+      <p>We will respond to verified privacy requests in accordance with applicable laws.</p>
+
+      <h5 style="color:#fff;margin-top:28px;">International Data Transfers</h5>
+      <p>Because PixelCloudz.com may work with service providers located in different countries, your information may occasionally be processed or stored outside your country of residence. Whenever international transfers occur, we take reasonable steps to ensure appropriate safeguards are in place in accordance with applicable privacy laws.</p>
+
+      <h5 style="color:#fff;margin-top:28px;">Data Retention</h5>
+      <p>We retain personal information only for as long as reasonably necessary to fulfill the purposes described in this Privacy Policy — operating our website, responding to enquiries, complying with legal obligations, and resolving disputes. When information is no longer required, we take reasonable steps to securely delete or anonymize it.</p>
+
+      <h5 style="color:#fff;margin-top:28px;">Security Measures</h5>
+      <p>We use reasonable administrative, technical, and organizational safeguards to help protect personal information against unauthorized access, misuse, alteration, disclosure, or loss. No method of data transmission over the internet can be guaranteed to be completely secure, so we encourage visitors to avoid sharing sensitive information unless necessary.</p>
 
       <h5 style="color:#fff;margin-top:28px;">Children's Privacy</h5>
-      <p>PixelCloudz is not directed at children under 13, and we do not knowingly collect personal information from children.</p>
+      <p>PixelCloudz.com is intended for a general audience and is not directed at children under the age of 13. We do not knowingly collect personal information from children. If you believe a child has provided personal information through our website, please contact us so we can review and, where appropriate, remove it from our records.</p>
 
-      <h5 style="color:#fff;margin-top:28px;">Changes to This Policy</h5>
-      <p class="mb-0">We may update this Privacy Policy from time to time. Continued use of the site after changes constitutes acceptance of the updated policy.</p>
+      <h5 style="color:#fff;margin-top:28px;">External Websites</h5>
+      <p>Throughout PixelCloudz.com you'll find links to storefronts, developer sites, and other gaming-related resources. These are provided for convenience. Once you leave our website, any information you provide is governed by the privacy policy of the third-party site you visit — we are not responsible for their content or privacy practices.</p>
+
+      <h5 style="color:#fff;margin-top:28px;">Updates to This Privacy Policy</h5>
+      <p class="mb-0">As our website evolves or legal requirements change, we may update this Privacy Policy from time to time. Revisions become effective once published on this page, and the Effective Date above will be updated accordingly. We encourage visitors to review this page periodically.</p>
     </div>
   </div>
 </section>
@@ -92,7 +160,11 @@
       <div class="col-lg-4 col-md-6 footer-col">
         <a href="index.html" class="pc-logo" style="margin-bottom:16px;display:inline-flex;"><span class="logo-mark"><i class="fa-solid fa-cloud-bolt"></i></span>Pixel<span class="accent">Cloudz</span></a>
         <p>Honest, in-depth video game reviews, ratings, and platform availability for players who want the real story before they hit play.</p>
-     
+        <!-- Social links intentionally omitted until real, verified brand accounts exist.
+             Add them here once claimed, e.g.:
+             <div class="footer-social">
+               <a href="https://facebook.com/YOUR-VERIFIED-PAGE" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+             </div> -->
       </div>
       <div class="col-lg-2 col-md-6 footer-col"><h6>Quick Links</h6><ul><li><a href="index.html">Home</a></li><li><a href="reviews.html">Reviews</a></li><li><a href="top-rated.html">Top Rated</a></li><li><a href="latest.html">Latest</a></li><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li></ul></div>
       <div class="col-lg-2 col-md-6 footer-col"><h6>Categories</h6><ul><li><a href="categories.html">Action</a></li><li><a href="categories.html">RPG</a></li><li><a href="categories.html">Open World</a></li><li><a href="categories.html">Horror</a></li><li><a href="categories.html">Indie</a></li></ul></div>
@@ -114,9 +186,10 @@
 </footer>
 
 <button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
-<script src="./assets/js/jquery.js"></script>
-<script src="./assets/js/bootstrap.js"></script>
-<script src="./assets/js/fontawsome.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/search-index.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/cookie-consent.js"></script>
 </body>
 </html>

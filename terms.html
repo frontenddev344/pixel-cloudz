@@ -9,8 +9,8 @@
 <link rel="icon" href="assets/images/icons/favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/bootstrap.css">
-  <link rel="stylesheet" href="./assets/css/fontawsome.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
@@ -30,7 +30,7 @@
     </div>
   </div>
 </header>
-<div class="pc-search-overlay"><div class="pc-search-box"><input type="text" class="pc-search-input" placeholder="Search games, reviews, platforms..."><span class="pc-search-close"><i class="fa-solid fa-xmark"></i> Close</span></div></div>
+<div class="pc-search-overlay"><div class="pc-search-box"><input type="text" class="pc-search-input" placeholder="Search games, reviews, platforms..." autocomplete="off"><div class="pc-search-results" id="pcSearchResults"></div><span class="pc-search-close"><i class="fa-solid fa-xmark"></i> Close</span></div></div>
 <div class="pc-mobile-backdrop"></div>
 <div class="pc-mobile-menu">
   <div class="d-flex justify-content-between align-items-center mb-4">
@@ -51,27 +51,70 @@
 
 <section class="section">
   <div class="container-xl">
-    <div class="glass-panel p-4 p-md-5" style="max-width:900px;margin:0 auto;font-size:14.5px;color:var(--text-secondary);">
-      <p style="color:var(--text-muted);font-size:13px;">Last updated: July 6, 2026</p>
-      <p>These Terms &amp; Conditions ("Terms") govern your access to and use of PixelCloudz.com ("PixelCloudz", "we", "us"). By using this website, you agree to be bound by these Terms.</p>
+    <div class="glass-panel p-4 p-md-5 legal-content" style="max-width:960px;margin:0 auto;font-size:14.5px;color:var(--text-secondary);">
+      <p style="color:var(--text-muted);font-size:13px;">Effective Date: July 2026</p>
+      <p>Welcome to <strong style="color:#fff;">PixelCloudz.com</strong>. By accessing or using our website, you agree to comply with these Terms &amp; Conditions. These terms explain the rules that govern your use of our content, services, and features. If you do not agree with any part of these terms, please discontinue using the website.</p>
 
-      <h5 style="color:#fff;margin-top:28px;">Use of the Site</h5>
-      <p>You may use PixelCloudz for personal, non-commercial purposes. You agree not to misuse the site, attempt unauthorized access to our systems, scrape content at scale, or interfere with normal operation of the website.</p>
+      <h5 style="color:#fff;margin-top:28px;">About PixelCloudz.com</h5>
+      <p>PixelCloudz.com is an independent games media website that publishes reviews, ratings, platform availability guides, and gaming news to help readers make more informed purchasing decisions. Our content is created for informational and editorial purposes.</p>
 
-      <h5 style="color:#fff;margin-top:28px;">Content and Intellectual Property</h5>
-      <p>All original text, reviews, ratings, graphics, and layout on PixelCloudz are the property of PixelCloudz unless otherwise noted. Game titles, logos, cover art, screenshots, and trademarks referenced on this site remain the property of their respective developers and publishers and are used for editorial and identification purposes only.</p>
+      <h5 style="color:#fff;margin-top:28px;">Website Content</h5>
+      <p>We work to ensure that reviews, scores, and platform information are accurate and regularly updated. However, games receive patches, prices change, and platform availability shifts without notice. While we make every reasonable effort to keep content current, we cannot guarantee that every review always reflects a game's most recent state. Visitors should verify pricing and platform details directly with the relevant storefront before purchasing.</p>
 
-      <h5 style="color:#fff;margin-top:28px;">Reviews and Ratings</h5>
-      <p>Our reviews, scores, and opinions reflect the independent judgment of our editorial team at the time of publication. Game updates, patches, and platform changes may affect accuracy over time; we periodically revisit reviews but cannot guarantee real-time accuracy for every title.</p>
+      <h5 style="color:#fff;margin-top:28px;">User Responsibilities</h5>
+      <p>By using PixelCloudz.com, you agree to use the website responsibly and in accordance with all applicable laws. You agree not to attempt unauthorized access to our systems, introduce malicious software, scrape content at scale, or engage in activity that could negatively affect other visitors or the operation of the site.</p>
 
-      <h5 style="color:#fff;margin-top:28px;">Affiliate Links and Advertising</h5>
-      <p>Some pages may contain affiliate links, sponsored content, or advertisements, for which PixelCloudz may receive compensation. This does not influence our editorial scores or opinions.</p>
+      <h5 style="color:#fff;margin-top:28px;">Permitted Use</h5>
+      <p>Unless otherwise stated, content on PixelCloudz.com is provided for personal, informational, and non-commercial use. You may read, bookmark, and share links to our articles for lawful purposes. Copying, reproducing, republishing, or distributing substantial portions of our content without prior written permission is prohibited.</p>
+
+      <h5 style="color:#fff;margin-top:28px;">User Contributions</h5>
+      <p>If our website allows visitors to submit comments, ratings, or feedback, you remain responsible for anything you publish. You agree not to:</p>
+      <ul>
+        <li>Post unlawful, abusive, threatening, or defamatory material.</li>
+        <li>Upload content that infringes another person's rights.</li>
+        <li>Submit spam, advertisements, or misleading information.</li>
+        <li>Attempt to impersonate another individual or organization.</li>
+      </ul>
+      <p>We reserve the right, but not the obligation, to moderate, edit, or remove user-generated content that violates these Terms.</p>
+
+      <h5 style="color:#fff;margin-top:28px;">Third-Party Websites</h5>
+      <p>PixelCloudz.com may contain links to third-party storefronts, developer websites, or other external services for your convenience. These websites operate independently from PixelCloudz.com. We are not responsible for their content, privacy practices, availability, pricing, or products. Your interactions with third-party websites are governed solely by their own terms and policies.</p>
+
+      <h5 style="color:#fff;margin-top:28px;">Website Availability</h5>
+      <p>Although we strive to keep PixelCloudz.com available at all times, we cannot guarantee uninterrupted access. Scheduled maintenance, technical upgrades, server issues, or events beyond our reasonable control may occasionally affect availability. We reserve the right to modify, suspend, or discontinue any part of the website without prior notice.</p>
+
+      <h5 style="color:#fff;margin-top:28px;">Disclaimer of Warranties</h5>
+      <p>PixelCloudz.com is provided on an "as available" and "as is" basis. While we make every effort to publish accurate and helpful content, we cannot guarantee that every review, score, or resource will always be complete, error-free, or suitable for every individual situation. Game prices, availability, and platform support can change without notice.</p>
 
       <h5 style="color:#fff;margin-top:28px;">Limitation of Liability</h5>
-      <p>PixelCloudz is provided on an "as is" basis. We are not liable for any damages arising from your use of, or inability to use, this website or reliance on its content.</p>
+      <p>To the fullest extent permitted by applicable law, PixelCloudz.com, its owners, authors, contributors, and partners shall not be responsible for any direct, indirect, incidental, or consequential damages resulting from your use of, or inability to use, this website or any information published on it. Your use of PixelCloudz.com is entirely at your own discretion and risk.</p>
+
+      <h5 style="color:#fff;margin-top:28px;">Intellectual Property</h5>
+      <p>Unless otherwise stated, all original content published on PixelCloudz.com — including reviews, articles, graphics, logos, layouts, branding, and illustrations — is owned by or licensed to PixelCloudz.com and is protected by applicable intellectual property laws. Game titles, cover art, screenshots, and trademarks referenced on this site remain the property of their respective developers and publishers and are used for editorial and identification purposes only. You may not copy, reproduce, modify, distribute, publish, or commercially exploit any portion of our original content without prior written permission.</p>
+
+      <h5 style="color:#fff;margin-top:28px;">Privacy</h5>
+      <p>Your use of PixelCloudz.com is also governed by our <a href="privacy-policy.html" style="color:var(--cyan);">Privacy Policy</a>, which explains how information may be collected, stored, used, and protected while you browse our website.</p>
+
+      <h5 style="color:#fff;margin-top:28px;">Affiliate Disclosure</h5>
+      <p>Some pages on PixelCloudz.com include affiliate links to storefronts, hardware retailers, or subscription services. If you click one of these links and complete a qualifying purchase, we may receive a commission at no additional cost to you. Affiliate partnerships help support the ongoing operation of PixelCloudz.com. We remain committed to honest, unbiased editorial standards — our review scores and recommendations are never influenced by affiliate relationships or compensation.</p>
+
+      <h5 style="color:#fff;margin-top:28px;">Accuracy of Information</h5>
+      <p>We continuously review and update our content whenever practical. However, game details — patches, pricing, platform availability, subscription-service inclusion — may become outdated as titles evolve post-launch. Readers should independently verify important details before making a purchase.</p>
+
+      <h5 style="color:#fff;margin-top:28px;">Indemnification</h5>
+      <p>By using PixelCloudz.com, you agree to indemnify and hold harmless PixelCloudz.com, its owners, contributors, and affiliates from any claims, liabilities, damages, or legal costs arising from your misuse of the website or your violation of these Terms &amp; Conditions.</p>
+
+      <h5 style="color:#fff;margin-top:28px;">Termination of Access</h5>
+      <p>We reserve the right to restrict, suspend, or terminate access to all or part of PixelCloudz.com at our sole discretion if we believe a user has violated these Terms, engaged in unlawful conduct, or acted in a manner that could harm the website or its visitors.</p>
+
+      <h5 style="color:#fff;margin-top:28px;">Governing Law</h5>
+      <p>These Terms &amp; Conditions shall be interpreted and enforced in accordance with applicable European Union and Hungarian law, without regard to conflict of law principles, given PixelCloudz's operating base in Budapest, Hungary. Any dispute arising from your use of this website will be handled through the appropriate courts having jurisdiction, unless otherwise required by applicable law.</p>
+
+      <h5 style="color:#fff;margin-top:28px;">Severability</h5>
+      <p>If any provision of these Terms &amp; Conditions is found invalid or unenforceable by a court of competent jurisdiction, that provision shall be interpreted to the fullest extent permitted by law while the remaining provisions continue in full force and effect.</p>
 
       <h5 style="color:#fff;margin-top:28px;">Changes to These Terms</h5>
-      <p class="mb-0">We may revise these Terms at any time. Continued use of the site after changes are posted constitutes acceptance of the revised Terms.</p>
+      <p class="mb-0">We may revise these Terms at any time to reflect changes in our website, legal obligations, or business practices. Updates become effective immediately after being published on this page. Continued use of PixelCloudz.com after updates constitutes acceptance of the revised Terms.</p>
     </div>
   </div>
 </section>
@@ -82,7 +125,11 @@
       <div class="col-lg-4 col-md-6 footer-col">
         <a href="index.html" class="pc-logo" style="margin-bottom:16px;display:inline-flex;"><span class="logo-mark"><i class="fa-solid fa-cloud-bolt"></i></span>Pixel<span class="accent">Cloudz</span></a>
         <p>Honest, in-depth video game reviews, ratings, and platform availability for players who want the real story before they hit play.</p>
-     
+        <!-- Social links intentionally omitted until real, verified brand accounts exist.
+             Add them here once claimed, e.g.:
+             <div class="footer-social">
+               <a href="https://facebook.com/YOUR-VERIFIED-PAGE" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+             </div> -->
       </div>
       <div class="col-lg-2 col-md-6 footer-col"><h6>Quick Links</h6><ul><li><a href="index.html">Home</a></li><li><a href="reviews.html">Reviews</a></li><li><a href="top-rated.html">Top Rated</a></li><li><a href="latest.html">Latest</a></li><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li></ul></div>
       <div class="col-lg-2 col-md-6 footer-col"><h6>Categories</h6><ul><li><a href="categories.html">Action</a></li><li><a href="categories.html">RPG</a></li><li><a href="categories.html">Open World</a></li><li><a href="categories.html">Horror</a></li><li><a href="categories.html">Indie</a></li></ul></div>
@@ -104,9 +151,10 @@
 </footer>
 
 <button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
-<script src="./assets/js/jquery.js"></script>
-<script src="./assets/js/bootstrap.js"></script>
-<script src="./assets/js/fontawsome.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/search-index.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/cookie-consent.js"></script>
 </body>
 </html>

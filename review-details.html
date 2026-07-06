@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Elden Ring Review — Scores, Platforms &amp; Verdict | PixelCloudz</title>
-<meta name="description" content="Our full Elden Ring review: Metacritic and OpenCritic scores, pros and cons, system requirements, platform availability, and verdict.">
+<meta name="description" content="Our full Elden Ring review: critic and reader scores, pros and cons, system requirements, platform availability, and verdict.">
 <link rel="canonical" href="https://pixelcloudz.com/review-details.html">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Elden Ring Review — PixelCloudz">
@@ -14,10 +14,10 @@
 <link rel="icon" href="assets/images/icons/favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/bootstrap.css">
-  <link rel="stylesheet" href="./assets/css/fontawsome.css">
-<link rel="stylesheet" href="./assets/css/swiper.css">
-  <link rel="stylesheet" href="./assets/css/aos.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="assets/css/responsive.css">
 
@@ -61,7 +61,7 @@
 </header>
 
 <div class="pc-search-overlay">
-  <div class="pc-search-box"><input type="text" class="pc-search-input" placeholder="Search games, reviews, platforms..."><span class="pc-search-close"><i class="fa-solid fa-xmark"></i> Close</span></div>
+  <div class="pc-search-box"><input type="text" class="pc-search-input" placeholder="Search games, reviews, platforms..." autocomplete="off"><div class="pc-search-results" id="pcSearchResults"></div><span class="pc-search-close"><i class="fa-solid fa-xmark"></i> Close</span></div>
 </div>
 <div class="pc-mobile-backdrop"></div>
 <div class="pc-mobile-menu">
@@ -99,10 +99,10 @@
           </div>
         </div>
         <div class="d-flex flex-wrap gap-2 mt-4">
-          <a href="https://store.steampowered.com" target="_blank" rel="noopener noreferrer" class="btn-platform"><i class="fa-brands fa-steam"></i> Steam</a>
-          <a href="https://store.playstation.com" target="_blank" rel="noopener noreferrer" class="btn-platform"><i class="fa-brands fa-playstation"></i> PlayStation</a>
-          <a href="https://www.xbox.com/games/store" target="_blank" rel="noopener noreferrer" class="btn-platform"><i class="fa-brands fa-xbox"></i> Xbox</a>
-          <a href="https://store.steampowered.com" target="_blank" rel="noopener noreferrer" class="btn-platform"><i class="fa-solid fa-desktop"></i> PC</a>
+          <a href="https://store.steampowered.com/search/?term=Elden+Ring" target="_blank" rel="noopener noreferrer" class="btn-platform"><i class="fa-brands fa-steam"></i> Steam</a>
+          <a href="https://store.playstation.com/en-us/search/Elden+Ring" target="_blank" rel="noopener noreferrer" class="btn-platform"><i class="fa-brands fa-playstation"></i> PlayStation</a>
+          <a href="https://www.xbox.com/en-us/search/results/games?q=Elden+Ring" target="_blank" rel="noopener noreferrer" class="btn-platform"><i class="fa-brands fa-xbox"></i> Xbox</a>
+          <a href="https://store.steampowered.com/search/?term=Elden+Ring" target="_blank" rel="noopener noreferrer" class="btn-platform"><i class="fa-solid fa-desktop"></i> PC</a>
           <a href="https://www.google.com/search?q=review+details+official+website" target="_blank" rel="noopener noreferrer" class="btn-neon btn-sm">Official Website <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </div>
       </div>
@@ -121,39 +121,22 @@
         <div class="glass-panel p-4 mb-5" data-aos="fade-up">
           <div class="row g-4 text-center">
             <div class="col-4"><div class="score-ring mx-auto" style="--pct:96;"><div class="val">9.6</div></div><p class="mt-2 mb-0" style="font-size:12px;color:var(--text-muted);">Editor's Score</p></div>
-            <div class="col-4"><div class="score-ring mx-auto" style="--pct:95;"><div class="val">95</div></div><p class="mt-2 mb-0" style="font-size:12px;color:var(--text-muted);">Metacritic</p></div>
-            <div class="col-4"><div class="score-ring mx-auto" style="--pct:94;"><div class="val">94</div></div><p class="mt-2 mb-0" style="font-size:12px;color:var(--text-muted);">OpenCritic</p></div>
+            <div class="col-4"><div class="score-ring mx-auto" style="--pct:95;"><div class="val">95</div></div><p class="mt-2 mb-0" style="font-size:12px;color:var(--text-muted);">Critic Average</p></div>
+            <div class="col-4"><div class="score-ring mx-auto" style="--pct:94;"><div class="val">94</div></div><p class="mt-2 mb-0" style="font-size:12px;color:var(--text-muted);">Reader Score</p></div>
           </div>
         </div>
 
         <!-- Screenshot Carousel -->
         <h3 class="mb-3" data-aos="fade-up">Screenshots</h3>
-        <div class="swiper screenshotSwiper mb-3" data-aos="fade-up">
+        <div class="swiper screenshotSwiper mb-5" data-aos="fade-up">
           <div class="swiper-wrapper">
             <div class="swiper-slide"><img src="assets/images/games/elden-ring-ss1.jpg" alt="Elden Ring screenshot 1 - Lands Between vista" loading="lazy" style="border-radius:var(--r-lg);width:100%;aspect-ratio:16/9;object-fit:cover;"></div>
             <div class="swiper-slide"><img src="assets/images/games/elden-ring-ss2.jpg" alt="Elden Ring screenshot 2 - boss battle" loading="lazy" style="border-radius:var(--r-lg);width:100%;aspect-ratio:16/9;object-fit:cover;"></div>
             <div class="swiper-slide"><img src="assets/images/games/elden-ring-ss3.jpg" alt="Elden Ring screenshot 3 - Stormveil Castle" loading="lazy" style="border-radius:var(--r-lg);width:100%;aspect-ratio:16/9;object-fit:cover;"></div>
-            <div class="swiper-slide"><img src="assets/images/games/elden-ring-ss4.jpg" alt="Elden Ring screenshot 4 - character customization" loading="lazy" style="border-radius:var(--r-lg);width:100%;aspect-ratio:16/9;object-fit:cover;"></div>
-            <div class="swiper-slide"><img src="assets/images/games/elden-ring-ss5.jpg" alt="Elden Ring screenshot 5 - riding Torrent" loading="lazy" style="border-radius:var(--r-lg);width:100%;aspect-ratio:16/9;object-fit:cover;"></div>
-            <div class="swiper-slide"><img src="assets/images/games/elden-ring-ss6.jpg" alt="Elden Ring screenshot 6 - underground catacombs" loading="lazy" style="border-radius:var(--r-lg);width:100%;aspect-ratio:16/9;object-fit:cover;"></div>
           </div>
           <div class="swiper-pagination"></div>
-        </div>
-        <div class="swiper screenshotThumbs mb-5">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="assets/images/games/elden-ring-ss1.jpg" alt="thumb 1" style="border-radius:8px;aspect-ratio:16/9;object-fit:cover;cursor:pointer;"></div>
-            <div class="swiper-slide"><img src="assets/images/games/elden-ring-ss2.jpg" alt="thumb 2" style="border-radius:8px;aspect-ratio:16/9;object-fit:cover;cursor:pointer;"></div>
-            <div class="swiper-slide"><img src="assets/images/games/elden-ring-ss3.jpg" alt="thumb 3" style="border-radius:8px;aspect-ratio:16/9;object-fit:cover;cursor:pointer;"></div>
-            <div class="swiper-slide"><img src="assets/images/games/elden-ring-ss4.jpg" alt="thumb 4" style="border-radius:8px;aspect-ratio:16/9;object-fit:cover;cursor:pointer;"></div>
-            <div class="swiper-slide"><img src="assets/images/games/elden-ring-ss5.jpg" alt="thumb 5" style="border-radius:8px;aspect-ratio:16/9;object-fit:cover;cursor:pointer;"></div>
-            <div class="swiper-slide"><img src="assets/images/games/elden-ring-ss6.jpg" alt="thumb 6" style="border-radius:8px;aspect-ratio:16/9;object-fit:cover;cursor:pointer;"></div>
-          </div>
-        </div>
-
-        <!-- Trailer -->
-        <h3 class="mb-3" data-aos="fade-up">Gameplay Trailer</h3>
-        <div class="ratio ratio-16x9 mb-5" style="border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--border-soft);" data-aos="fade-up">
-          <iframe src="https://www.youtube.com/embed/E3Huy2cdih0" title="Elden Ring Official Launch Trailer" allowfullscreen loading="lazy"></iframe>
+          <div class="swiper-button-prev screenshot-prev"></div>
+          <div class="swiper-button-next screenshot-next"></div>
         </div>
 
         <!-- Description -->
@@ -173,7 +156,7 @@
           <h4 class="mt-4 mb-2" style="font-size:18px;color:#fff;">Performance Has Gotten Better, Mostly</h4>
           <p class="mb-3">Launch-day Elden Ring stuttered a lot, especially on PC and on base PS4/Xbox One. Several patches later, and especially since the Shadow of the Erdtree update, it runs a lot more consistently on current-gen consoles and anything reasonably modern on PC. If you're still on base last-gen hardware though, expect the frame rate to dip whenever things get busy on screen.</p>
 
-          <h4 class="mt-4 mb-2" style="font-size:18px;color:#fff;">Where We Landed</h4>
+          <h4 class="mt-4 mb-2" style="font-size:18px;color:#fff;">The Bottom Line</h4>
           <p class="mb-0">Elden Ring is big, but it doesn't coast on being big — almost everything you find feels like someone sat down and designed it on purpose. It demands patience and a tolerance for not being told what's going on, and it won't click for everyone. For the people willing to put in the time, though, this is one of the best action RPGs we've played in years.</p>
         </div>
 
@@ -330,19 +313,10 @@
 
         <!-- User Reviews -->
         <h3 class="mb-3" data-aos="fade-up">User Reviews</h3>
-        <div class="row g-4 mb-5" data-aos="fade-up">
-          <div class="col-md-6">
-            <div class="glass-panel p-4">
-              <div class="d-flex justify-content-between mb-2"><strong style="color:#fff;">TarnishedTraveler</strong><span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span></div>
-              <p style="font-size:13.5px;margin:0;">90 hours in and I found a whole legacy dungeon last night I'd somehow missed the entire time. This game does not run out of stuff to find.</p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="glass-panel p-4">
-              <div class="d-flex justify-content-between mb-2"><strong style="color:#fff;">CasualKnight22</strong><span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span></div>
-              <p style="font-size:13.5px;margin:0;">Loved almost all of it. A couple of the endgame bosses made me want to throw my controller though, not gonna lie.</p>
-            </div>
-          </div>
+        <div class="glass-panel p-4 mb-5 text-center" data-aos="fade-up">
+          <i class="fa-regular fa-comments" style="font-size:28px;color:var(--text-muted);"></i>
+          <p style="margin:12px 0 4px;color:var(--text-secondary);">No reader reviews yet — be the first to share your take on Elden Ring.</p>
+          <a href="contact.html" class="btn-outline-neon btn-sm mt-2">Share Your Thoughts <i class="fa-solid fa-arrow-right"></i></a>
         </div>
 
         <!-- Related Games -->
@@ -379,9 +353,9 @@
         <div class="sidebar-card">
           <h6>Buy &amp; Play</h6>
           <div class="d-flex flex-column gap-2">
-            <a href="https://store.steampowered.com" target="_blank" rel="noopener noreferrer" class="btn-platform justify-content-start"><i class="fa-brands fa-steam"></i> Steam</a>
-            <a href="https://store.playstation.com" target="_blank" rel="noopener noreferrer" class="btn-platform justify-content-start"><i class="fa-brands fa-playstation"></i> PlayStation Store</a>
-            <a href="https://www.xbox.com/games/store" target="_blank" rel="noopener noreferrer" class="btn-platform justify-content-start"><i class="fa-brands fa-xbox"></i> Xbox Store</a>
+            <a href="https://store.steampowered.com/search/?term=Elden+Ring" target="_blank" rel="noopener noreferrer" class="btn-platform justify-content-start"><i class="fa-brands fa-steam"></i> Steam</a>
+            <a href="https://store.playstation.com/en-us/search/Elden+Ring" target="_blank" rel="noopener noreferrer" class="btn-platform justify-content-start"><i class="fa-brands fa-playstation"></i> PlayStation Store</a>
+            <a href="https://www.xbox.com/en-us/search/results/games?q=Elden+Ring" target="_blank" rel="noopener noreferrer" class="btn-platform justify-content-start"><i class="fa-brands fa-xbox"></i> Xbox Store</a>
           </div>
         </div>
       </div>
@@ -396,7 +370,11 @@
       <div class="col-lg-4 col-md-6 footer-col">
         <a href="index.html" class="pc-logo" style="margin-bottom:16px;display:inline-flex;"><span class="logo-mark"><i class="fa-solid fa-cloud-bolt"></i></span>Pixel<span class="accent">Cloudz</span></a>
         <p>Honest, in-depth video game reviews, ratings, and platform availability for players who want the real story before they hit play.</p>
-     
+        <!-- Social links intentionally omitted until real, verified brand accounts exist.
+             Add them here once claimed, e.g.:
+             <div class="footer-social">
+               <a href="https://facebook.com/YOUR-VERIFIED-PAGE" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+             </div> -->
       </div>
       <div class="col-lg-2 col-md-6 footer-col"><h6>Quick Links</h6><ul><li><a href="index.html">Home</a></li><li><a href="reviews.html">Reviews</a></li><li><a href="top-rated.html">Top Rated</a></li><li><a href="latest.html">Latest</a></li><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li></ul></div>
       <div class="col-lg-2 col-md-6 footer-col"><h6>Categories</h6><ul><li><a href="categories.html">Action</a></li><li><a href="categories.html">RPG</a></li><li><a href="categories.html">Open World</a></li><li><a href="categories.html">Horror</a></li><li><a href="categories.html">Indie</a></li></ul></div>
@@ -419,21 +397,18 @@
 
 <button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
 
-<script src="./assets/js/jquery.js"></script>
-<script src="./assets/js/bootstrap.js"></script>
-<script src="./assets/js/fontawsome.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="./assets/js/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="assets/js/search-index.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/cookie-consent.js"></script>
 <script>
-  const thumbSwiper = new Swiper(".screenshotThumbs", {
-    slidesPerView: 4, spaceBetween: 10, watchSlidesProgress: true,
-    breakpoints: { 576:{slidesPerView:5}, 992:{slidesPerView:6} }
-  });
   new Swiper(".screenshotSwiper", {
     slidesPerView: 1, autoplay: { delay: 4500, disableOnInteraction:false },
     pagination: { el: ".screenshotSwiper .swiper-pagination", clickable: true },
-    thumbs: { swiper: thumbSwiper },
+    navigation: { nextEl: ".screenshot-next", prevEl: ".screenshot-prev" },
     loop: true
   });
   new Swiper(".relatedSwiper", {

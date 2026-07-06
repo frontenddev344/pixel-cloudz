@@ -13,9 +13,9 @@
 <link rel="icon" href="assets/images/icons/favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/bootstrap.css">
-  <link rel="stylesheet" href="./assets/css/fontawsome.css">
-  <link rel="stylesheet" href="./assets/css/aos.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
@@ -35,7 +35,7 @@
     </div>
   </div>
 </header>
-<div class="pc-search-overlay"><div class="pc-search-box"><input type="text" class="pc-search-input" placeholder="Search games, reviews, platforms..."><span class="pc-search-close"><i class="fa-solid fa-xmark"></i> Close</span></div></div>
+<div class="pc-search-overlay"><div class="pc-search-box"><input type="text" class="pc-search-input" placeholder="Search games, reviews, platforms..." autocomplete="off"><div class="pc-search-results" id="pcSearchResults"></div><span class="pc-search-close"><i class="fa-solid fa-xmark"></i> Close</span></div></div>
 <div class="pc-mobile-backdrop"></div>
 <div class="pc-mobile-menu">
   <div class="d-flex justify-content-between align-items-center mb-4">
@@ -79,46 +79,46 @@
     <div class="row g-3 g-md-4" id="platformGrid">
 
       <div class="col-6 col-md-4 col-lg-3 plat-item" data-name="Steam" data-type="pc" data-aos="zoom-in">
-        <a href="reviews.html" class="platform-card d-block"><div class="p-icon"><i class="fa-brands fa-steam"></i></div><h5>Steam</h5><div class="p-count">412 games tracked</div></a>
+        <a href="reviews.html" class="platform-card d-block"><div class="p-icon"><i class="fa-brands fa-steam"></i></div><h5>Steam</h5><div class="p-count">21 games tracked</div></a>
       </div>
       <div class="col-6 col-md-4 col-lg-3 plat-item" data-name="PlayStation 5" data-type="console" data-aos="zoom-in" data-aos-delay="50">
-        <a href="reviews.html" class="platform-card d-block"><div class="p-icon"><i class="fa-brands fa-playstation"></i></div><h5>PlayStation 5</h5><div class="p-count">186 games tracked</div></a>
+        <a href="reviews.html" class="platform-card d-block"><div class="p-icon"><i class="fa-brands fa-playstation"></i></div><h5>PlayStation 5</h5><div class="p-count">23 games tracked</div></a>
       </div>
       <div class="col-6 col-md-4 col-lg-3 plat-item" data-name="Xbox Series X" data-type="console" data-aos="zoom-in" data-aos-delay="100">
-        <a href="reviews.html" class="platform-card d-block"><div class="p-icon"><i class="fa-brands fa-xbox"></i></div><h5>Xbox Series X</h5><div class="p-count">174 games tracked</div></a>
+        <a href="reviews.html" class="platform-card d-block"><div class="p-icon"><i class="fa-brands fa-xbox"></i></div><h5>Xbox Series X</h5><div class="p-count">16 games tracked</div></a>
       </div>
       <div class="col-6 col-md-4 col-lg-3 plat-item" data-name="Nintendo Switch" data-type="console" data-aos="zoom-in" data-aos-delay="150">
-        <a href="reviews.html" class="platform-card d-block"><div class="p-icon"><i class="fa-solid fa-n"></i></div><h5>Nintendo Switch</h5><div class="p-count">203 games tracked</div></a>
+        <a href="reviews.html" class="platform-card d-block"><div class="p-icon"><i class="fa-solid fa-n"></i></div><h5>Nintendo Switch</h5><div class="p-count">5 games tracked</div></a>
       </div>
       <div class="col-6 col-md-4 col-lg-3 plat-item" data-name="PC" data-type="pc" data-aos="zoom-in">
-        <a href="reviews.html" class="platform-card d-block"><div class="p-icon"><i class="fa-solid fa-desktop"></i></div><h5>PC</h5><div class="p-count">498 games tracked</div></a>
+        <a href="reviews.html" class="platform-card d-block"><div class="p-icon"><i class="fa-solid fa-desktop"></i></div><h5>PC</h5><div class="p-count">21 games tracked</div></a>
       </div>
       <div class="col-6 col-md-4 col-lg-3 plat-item" data-name="Mac" data-type="pc" data-aos="zoom-in" data-aos-delay="50">
-        <a href="reviews.html" class="platform-card d-block"><div class="p-icon"><i class="fa-brands fa-apple"></i></div><h5>Mac</h5><div class="p-count">87 games tracked</div></a>
+        <a href="reviews.html" class="platform-card d-block"><div class="p-icon"><i class="fa-brands fa-apple"></i></div><h5>Mac</h5><div class="p-count">4 games tracked</div></a>
       </div>
       <div class="col-6 col-md-4 col-lg-3 plat-item" data-name="Epic Games" data-type="pc" data-aos="zoom-in" data-aos-delay="100">
-        <a href="reviews.html" class="platform-card d-block"><div class="p-icon"><i class="fa-brands fa-epic-games"></i></div><h5>Epic Games</h5><div class="p-count">156 games tracked</div></a>
+        <a href="reviews.html" class="platform-card d-block"><div class="p-icon"><i class="fa-brands fa-epic-games"></i></div><h5>Epic Games</h5><div class="p-count">13 games tracked</div></a>
       </div>
       <div class="col-6 col-md-4 col-lg-3 plat-item" data-name="EA App" data-type="pc" data-aos="zoom-in" data-aos-delay="150">
-        <a href="reviews.html" class="platform-card d-block"><div class="p-icon"><i class="fa-solid fa-e"></i></div><h5>EA App</h5><div class="p-count">64 games tracked</div></a>
+        <a href="reviews.html" class="platform-card d-block"><div class="p-icon"><i class="fa-solid fa-e"></i></div><h5>EA App</h5><div class="p-count">Coverage varies</div></a>
       </div>
       <div class="col-6 col-md-4 col-lg-3 plat-item" data-name="Ubisoft Connect" data-type="pc" data-aos="zoom-in">
-        <a href="reviews.html" class="platform-card d-block"><div class="p-icon"><i class="fa-solid fa-u"></i></div><h5>Ubisoft Connect</h5><div class="p-count">78 games tracked</div></a>
+        <a href="reviews.html" class="platform-card d-block"><div class="p-icon"><i class="fa-solid fa-u"></i></div><h5>Ubisoft Connect</h5><div class="p-count">Coverage varies</div></a>
       </div>
       <div class="col-6 col-md-4 col-lg-3 plat-item" data-name="Battle.net" data-type="pc" data-aos="zoom-in" data-aos-delay="50">
-        <a href="reviews.html" class="platform-card d-block"><div class="p-icon"><i class="fa-solid fa-b"></i></div><h5>Battle.net</h5><div class="p-count">32 games tracked</div></a>
+        <a href="reviews.html" class="platform-card d-block"><div class="p-icon"><i class="fa-solid fa-b"></i></div><h5>Battle.net</h5><div class="p-count">Coverage varies</div></a>
       </div>
       <div class="col-6 col-md-4 col-lg-3 plat-item" data-name="GOG" data-type="pc" data-aos="zoom-in" data-aos-delay="100">
-        <a href="reviews.html" class="platform-card d-block"><div class="p-icon"><i class="fa-solid fa-g"></i></div><h5>GOG</h5><div class="p-count">119 games tracked</div></a>
+        <a href="reviews.html" class="platform-card d-block"><div class="p-icon"><i class="fa-solid fa-g"></i></div><h5>GOG</h5><div class="p-count">Coverage varies</div></a>
       </div>
       <div class="col-6 col-md-4 col-lg-3 plat-item" data-name="Amazon Luna" data-type="cloud" data-aos="zoom-in" data-aos-delay="150">
-        <a href="reviews.html" class="platform-card d-block"><div class="p-icon"><i class="fa-solid fa-cloud"></i></div><h5>Amazon Luna</h5><div class="p-count">45 games tracked</div></a>
+        <a href="reviews.html" class="platform-card d-block"><div class="p-icon"><i class="fa-solid fa-cloud"></i></div><h5>Amazon Luna</h5><div class="p-count">Coverage varies</div></a>
       </div>
       <div class="col-6 col-md-4 col-lg-3 plat-item" data-name="GeForce NOW" data-type="cloud" data-aos="zoom-in">
-        <a href="reviews.html" class="platform-card d-block"><div class="p-icon"><i class="fa-solid fa-tv"></i></div><h5>GeForce NOW</h5><div class="p-count">211 games tracked</div></a>
+        <a href="reviews.html" class="platform-card d-block"><div class="p-icon"><i class="fa-solid fa-tv"></i></div><h5>GeForce NOW</h5><div class="p-count">14 games tracked</div></a>
       </div>
       <div class="col-6 col-md-4 col-lg-3 plat-item" data-name="Xbox Cloud Gaming" data-type="cloud" data-aos="zoom-in" data-aos-delay="50">
-        <a href="reviews.html" class="platform-card d-block"><div class="p-icon"><i class="fa-brands fa-xbox"></i></div><h5>Xbox Cloud Gaming</h5><div class="p-count">142 games tracked</div></a>
+        <a href="reviews.html" class="platform-card d-block"><div class="p-icon"><i class="fa-brands fa-xbox"></i></div><h5>Xbox Cloud Gaming</h5><div class="p-count">Coverage varies</div></a>
       </div>
 
     </div>
@@ -139,11 +139,12 @@
         <thead><tr><th>Game</th><th>Game Pass</th><th>PS Plus</th><th>EA Play</th><th>Ubisoft+</th></tr></thead>
         <tbody>
           <tr><td>Helldivers 2</td><td><span class="status-dot no"><i class="fa-solid fa-circle-minus"></i> No</span></td><td><span class="status-dot yes"><i class="fa-solid fa-circle-check"></i> Yes</span></td><td><span class="status-dot no"><i class="fa-solid fa-circle-minus"></i> No</span></td><td><span class="status-dot no"><i class="fa-solid fa-circle-minus"></i> No</span></td></tr>
-          <tr><td>EA Sports FC 25</td><td><span class="status-dot no"><i class="fa-solid fa-circle-minus"></i> No</span></td><td><span class="status-dot no"><i class="fa-solid fa-circle-minus"></i> No</span></td><td><span class="status-dot yes"><i class="fa-solid fa-circle-check"></i> Yes</span></td><td><span class="status-dot no"><i class="fa-solid fa-circle-minus"></i> No</span></td></tr>
-          <tr><td>Assassin's Creed Shadows</td><td><span class="status-dot soon"><i class="fa-solid fa-clock"></i> Soon</span></td><td><span class="status-dot no"><i class="fa-solid fa-circle-minus"></i> No</span></td><td><span class="status-dot no"><i class="fa-solid fa-circle-minus"></i> No</span></td><td><span class="status-dot yes"><i class="fa-solid fa-circle-check"></i> Yes</span></td></tr>
-          <tr><td>Forza Horizon 5</td><td><span class="status-dot yes"><i class="fa-solid fa-circle-check"></i> Yes</span></td><td><span class="status-dot no"><i class="fa-solid fa-circle-minus"></i> No</span></td><td><span class="status-dot no"><i class="fa-solid fa-circle-minus"></i> No</span></td><td><span class="status-dot no"><i class="fa-solid fa-circle-minus"></i> No</span></td></tr>
+          <tr><td>Split Fiction</td><td><span class="status-dot no"><i class="fa-solid fa-circle-minus"></i> No</span></td><td><span class="status-dot no"><i class="fa-solid fa-circle-minus"></i> No</span></td><td><span class="status-dot yes"><i class="fa-solid fa-circle-check"></i> Yes</span></td><td><span class="status-dot no"><i class="fa-solid fa-circle-minus"></i> No</span></td></tr>
+          <tr><td>Doom: The Dark Ages</td><td><span class="status-dot yes"><i class="fa-solid fa-circle-check"></i> Yes</span></td><td><span class="status-dot no"><i class="fa-solid fa-circle-minus"></i> No</span></td><td><span class="status-dot no"><i class="fa-solid fa-circle-minus"></i> No</span></td><td><span class="status-dot no"><i class="fa-solid fa-circle-minus"></i> No</span></td></tr>
+          <tr><td>Hollow Knight</td><td><span class="status-dot yes"><i class="fa-solid fa-circle-check"></i> Yes</span></td><td><span class="status-dot no"><i class="fa-solid fa-circle-minus"></i> No</span></td><td><span class="status-dot no"><i class="fa-solid fa-circle-minus"></i> No</span></td><td><span class="status-dot no"><i class="fa-solid fa-circle-minus"></i> No</span></td></tr>
         </tbody>
       </table>
+      <p style="font-size:12px;color:var(--text-muted);margin-top:14px;">Pulled directly from our own review pages — see each game's Subscription Availability section for the full breakdown.</p>
     </div>
   </div>
 </section>
@@ -154,7 +155,11 @@
       <div class="col-lg-4 col-md-6 footer-col">
         <a href="index.html" class="pc-logo" style="margin-bottom:16px;display:inline-flex;"><span class="logo-mark"><i class="fa-solid fa-cloud-bolt"></i></span>Pixel<span class="accent">Cloudz</span></a>
         <p>Honest, in-depth video game reviews, ratings, and platform availability for players who want the real story before they hit play.</p>
-     
+        <!-- Social links intentionally omitted until real, verified brand accounts exist.
+             Add them here once claimed, e.g.:
+             <div class="footer-social">
+               <a href="https://facebook.com/YOUR-VERIFIED-PAGE" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+             </div> -->
       </div>
       <div class="col-lg-2 col-md-6 footer-col"><h6>Quick Links</h6><ul><li><a href="index.html">Home</a></li><li><a href="reviews.html">Reviews</a></li><li><a href="top-rated.html">Top Rated</a></li><li><a href="latest.html">Latest</a></li><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li></ul></div>
       <div class="col-lg-2 col-md-6 footer-col"><h6>Categories</h6><ul><li><a href="categories.html">Action</a></li><li><a href="categories.html">RPG</a></li><li><a href="categories.html">Open World</a></li><li><a href="categories.html">Horror</a></li><li><a href="categories.html">Indie</a></li></ul></div>
@@ -177,11 +182,12 @@
 
 <button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
 
-<script src="./assets/js/jquery.js"></script>
-<script src="./assets/js/bootstrap.js"></script>
-<script src="./assets/js/fontawsome.js"></script>
-  <script src="./assets/js/aos.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="assets/js/search-index.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/cookie-consent.js"></script>
 <script>
   $(function(){
     function filterPlatforms(){

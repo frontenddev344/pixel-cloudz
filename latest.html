@@ -13,9 +13,9 @@
 <link rel="icon" href="assets/images/icons/favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/bootstrap.css">
-  <link rel="stylesheet" href="./assets/css/fontawsome.css">
-  <link rel="stylesheet" href="./assets/css/aos.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
@@ -35,7 +35,7 @@
     </div>
   </div>
 </header>
-<div class="pc-search-overlay"><div class="pc-search-box"><input type="text" class="pc-search-input" placeholder="Search games, reviews, platforms..."><span class="pc-search-close"><i class="fa-solid fa-xmark"></i> Close</span></div></div>
+<div class="pc-search-overlay"><div class="pc-search-box"><input type="text" class="pc-search-input" placeholder="Search games, reviews, platforms..." autocomplete="off"><div class="pc-search-results" id="pcSearchResults"></div><span class="pc-search-close"><i class="fa-solid fa-xmark"></i> Close</span></div></div>
 <div class="pc-mobile-backdrop"></div>
 <div class="pc-mobile-menu">
   <div class="d-flex justify-content-between align-items-center mb-4">
@@ -62,42 +62,42 @@
       <div class="col-lg-4 col-md-6 latest-batch-1" data-aos="fade-up">
         <div class="game-card"><div class="card-media"><span class="hover-tint"></span><span class="card-rating-badge"><i class="fa-solid fa-star"></i> 8.8</span><img src="assets/images/games/kingdome_come_img_1.jpg" alt="Kingdom Come Deliverance II cover" loading="lazy"></div>
           <div class="card-body"><h3 class="card-title">Kingdom Come: Deliverance II</h3><div class="card-meta"><span><i class="fa-regular fa-calendar"></i> Feb 2025</span><span><i class="fa-solid fa-building"></i> Warhorse Studios</span></div><p class="card-desc">Bigger, jankier in places, but way more ambitious than the original.</p><div class="card-cta"><span class="read-review">Read Review <i class="fa-solid fa-arrow-right"></i></span></div></div>
-          <a href="reviews.html" class="stretched-link" style="position:absolute;inset:0;"></a>
+          <a href="review-details-kingdom-come-deliverance-2.html" class="stretched-link" style="position:absolute;inset:0;"></a>
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6 latest-batch-1" data-aos="fade-up" data-aos-delay="100">
         <div class="game-card"><div class="card-media"><span class="hover-tint"></span><span class="card-rating-badge"><i class="fa-solid fa-star"></i> 8.5</span><img src="assets/images/games/doom_img_1.jpg" alt="Doom The Dark Ages cover" loading="lazy"></div>
           <div class="card-body"><h3 class="card-title">Doom: The Dark Ages</h3><div class="card-meta"><span><i class="fa-regular fa-calendar"></i> May 2025</span><span><i class="fa-solid fa-building"></i> id Software</span></div><p class="card-desc">Trades the frantic pace of 2016/Eternal for something heavier and slower.</p><div class="card-cta"><span class="read-review">Read Review <i class="fa-solid fa-arrow-right"></i></span></div></div>
-          <a href="reviews.html" class="stretched-link" style="position:absolute;inset:0;"></a>
+          <a href="review-details-doom-the-dark-ages.html" class="stretched-link" style="position:absolute;inset:0;"></a>
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6 latest-batch-1" data-aos="fade-up" data-aos-delay="200">
         <div class="game-card"><div class="card-media"><span class="hover-tint"></span><span class="card-rating-badge"><i class="fa-solid fa-star"></i> 9.0</span><img src="assets/images/games/indiana_jones_img_1.jpg" alt="Indiana Jones and the Great Circle cover" loading="lazy"></div>
           <div class="card-body"><h3 class="card-title">Indiana Jones and the Great Circle</h3><div class="card-meta"><span><i class="fa-regular fa-calendar"></i> Dec 2024</span><span><i class="fa-solid fa-building"></i> MachineGames</span></div><p class="card-desc">Finally, an Indiana Jones game that feels like being Indiana Jones.</p><div class="card-cta"><span class="read-review">Read Review <i class="fa-solid fa-arrow-right"></i></span></div></div>
-          <a href="reviews.html" class="stretched-link" style="position:absolute;inset:0;"></a>
+          <a href="review-details-indiana-jones-great-circle.html" class="stretched-link" style="position:absolute;inset:0;"></a>
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6 latest-batch-1" data-aos="fade-up">
         <div class="game-card"><div class="card-media"><span class="hover-tint"></span><span class="card-rating-badge"><i class="fa-solid fa-star"></i> 9.1</span><img src="assets/images/games/ghost_of_tsushima_img_1.jpg" alt="Ghost of Tsushima Director's Cut cover" loading="lazy"></div>
           <div class="card-body"><h3 class="card-title">Ghost of Tsushima Director's Cut</h3><div class="card-meta"><span><i class="fa-regular fa-calendar"></i> Nov 2024</span><span><i class="fa-solid fa-building"></i> Sucker Punch</span></div><p class="card-desc">Console exclusive no more, and it looks better than we remembered.</p><div class="card-cta"><span class="read-review">Read Review <i class="fa-solid fa-arrow-right"></i></span></div></div>
-          <a href="reviews.html" class="stretched-link" style="position:absolute;inset:0;"></a>
+          <a href="review-details-ghost-of-tsushima.html" class="stretched-link" style="position:absolute;inset:0;"></a>
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6 latest-batch-1" data-aos="fade-up" data-aos-delay="100">
         <div class="game-card"><div class="card-media"><span class="hover-tint"></span><span class="card-rating-badge"><i class="fa-solid fa-star"></i> 8.7</span><img src="assets/images/games/monster_hunter_wilds_img_1.jpg" alt="Monster Hunter Wilds cover" loading="lazy"></div>
           <div class="card-body"><h3 class="card-title">Monster Hunter Wilds</h3><div class="card-meta"><span><i class="fa-regular fa-calendar"></i> Mar 2025</span><span><i class="fa-solid fa-building"></i> Capcom</span></div><p class="card-desc">No more loading zones between areas — the hunt just keeps going.</p><div class="card-cta"><span class="read-review">Read Review <i class="fa-solid fa-arrow-right"></i></span></div></div>
-          <a href="reviews.html" class="stretched-link" style="position:absolute;inset:0;"></a>
+          <a href="review-details-monster-hunter-wilds.html" class="stretched-link" style="position:absolute;inset:0;"></a>
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6 latest-batch-1" data-aos="fade-up" data-aos-delay="200">
         <div class="game-card"><div class="card-media"><span class="hover-tint"></span><span class="card-rating-badge"><i class="fa-solid fa-star"></i> 8.6</span><img src="assets/images/games/split_fiction_img_1.jpg" alt="Split Fiction cover" loading="lazy"></div>
           <div class="card-body"><h3 class="card-title">Split Fiction</h3><div class="card-meta"><span><i class="fa-regular fa-calendar"></i> Mar 2025</span><span><i class="fa-solid fa-building"></i> Hazelight Studios</span></div><p class="card-desc">Every few minutes this throws a completely different mechanic at you.</p><div class="card-cta"><span class="read-review">Read Review <i class="fa-solid fa-arrow-right"></i></span></div></div>
-          <a href="reviews.html" class="stretched-link" style="position:absolute;inset:0;"></a>
+          <a href="review-details-split-fiction.html" class="stretched-link" style="position:absolute;inset:0;"></a>
         </div>
       </div>
 
@@ -105,37 +105,37 @@
       <div class="col-lg-4 col-md-6 latest-batch-2" style="display:none;">
         <div class="game-card"><div class="card-media"><span class="hover-tint"></span><span class="card-rating-badge"><i class="fa-solid fa-star"></i> 9.3</span><img src="assets/images/games/final_fantasy_img_1.jpg" alt="Final Fantasy VII Rebirth cover" loading="lazy"></div>
           <div class="card-body"><h3 class="card-title">Final Fantasy VII Rebirth</h3><div class="card-meta"><span><i class="fa-regular fa-calendar"></i> Feb 2024</span><span><i class="fa-solid fa-building"></i> Square Enix</span></div><p class="card-desc">Takes everything from the first remake and just goes bigger with it.</p><div class="card-cta"><span class="read-review">Read Review <i class="fa-solid fa-arrow-right"></i></span></div></div>
-          <a href="reviews.html" class="stretched-link" style="position:absolute;inset:0;"></a>
+          <a href="review-details-final-fantasy-vii-rebirth.html" class="stretched-link" style="position:absolute;inset:0;"></a>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 latest-batch-2" style="display:none;">
         <div class="game-card"><div class="card-media"><span class="hover-tint"></span><span class="card-rating-badge"><i class="fa-solid fa-star"></i> 9.0</span><img src="assets/images/games/black_myth_img_1.jpg" alt="Black Myth Wukong cover" loading="lazy"></div>
           <div class="card-body"><h3 class="card-title">Black Myth: Wukong</h3><div class="card-meta"><span><i class="fa-regular fa-calendar"></i> Aug 2024</span><span><i class="fa-solid fa-building"></i> Game Science</span></div><p class="card-desc">Gorgeous to look at, unforgiving to actually play.</p><div class="card-cta"><span class="read-review">Read Review <i class="fa-solid fa-arrow-right"></i></span></div></div>
-          <a href="reviews.html" class="stretched-link" style="position:absolute;inset:0;"></a>
+          <a href="review-details-black-myth-wukong.html" class="stretched-link" style="position:absolute;inset:0;"></a>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 latest-batch-2" style="display:none;">
         <div class="game-card"><div class="card-media"><span class="hover-tint"></span><span class="card-rating-badge"><i class="fa-solid fa-star"></i> 9.1</span><img src="assets/images/games/helldivers_img_1.jpg" alt="Helldivers 2 cover" loading="lazy"></div>
           <div class="card-body"><h3 class="card-title">Helldivers 2</h3><div class="card-meta"><span><i class="fa-regular fa-calendar"></i> Feb 2024</span><span><i class="fa-solid fa-building"></i> Arrowhead</span></div><p class="card-desc">Somehow both hilarious and genuinely tense at the same time.</p><div class="card-cta"><span class="read-review">Read Review <i class="fa-solid fa-arrow-right"></i></span></div></div>
-          <a href="reviews.html" class="stretched-link" style="position:absolute;inset:0;"></a>
+          <a href="review-details-helldivers-2.html" class="stretched-link" style="position:absolute;inset:0;"></a>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 latest-batch-2" style="display:none;">
         <div class="game-card"><div class="card-media"><span class="hover-tint"></span><span class="card-rating-badge"><i class="fa-solid fa-star"></i> 8.9</span><img src="assets/images/games/steller_blade_img_1.jpg" alt="Stellar Blade cover" loading="lazy"></div>
           <div class="card-body"><h3 class="card-title">Stellar Blade</h3><div class="card-meta"><span><i class="fa-regular fa-calendar"></i> Apr 2024</span><span><i class="fa-solid fa-building"></i> Shift Up</span></div><p class="card-desc">Parry timing is unforgiving early on, then suddenly clicks.</p><div class="card-cta"><span class="read-review">Read Review <i class="fa-solid fa-arrow-right"></i></span></div></div>
-          <a href="reviews.html" class="stretched-link" style="position:absolute;inset:0;"></a>
+          <a href="review-details-stellar-blade.html" class="stretched-link" style="position:absolute;inset:0;"></a>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 latest-batch-2" style="display:none;">
         <div class="game-card"><div class="card-media"><span class="hover-tint"></span><span class="card-rating-badge"><i class="fa-solid fa-star"></i> 8.6</span><img src="assets/images/games/lies_of_p_img_1.jpg" alt="Lies of P cover" loading="lazy"></div>
           <div class="card-body"><h3 class="card-title">Lies of P</h3><div class="card-meta"><span><i class="fa-regular fa-calendar"></i> Sep 2023</span><span><i class="fa-solid fa-building"></i> Neowiz</span></div><p class="card-desc">The premise sounds like a joke. The combat is not a joke.</p><div class="card-cta"><span class="read-review">Read Review <i class="fa-solid fa-arrow-right"></i></span></div></div>
-          <a href="reviews.html" class="stretched-link" style="position:absolute;inset:0;"></a>
+          <a href="review-details-lies-of-p.html" class="stretched-link" style="position:absolute;inset:0;"></a>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 latest-batch-2" style="display:none;">
         <div class="game-card"><div class="card-media"><span class="hover-tint"></span><span class="card-rating-badge"><i class="fa-solid fa-star"></i> 9.3</span><img src="assets/images/games/resident_evil_img_1.jpg" alt="Resident Evil 4 Remake cover" loading="lazy"></div>
           <div class="card-body"><h3 class="card-title">Resident Evil 4 Remake</h3><div class="card-meta"><span><i class="fa-regular fa-calendar"></i> Mar 2023</span><span><i class="fa-solid fa-building"></i> Capcom</span></div><p class="card-desc">Capcom didn't just remaster this one, they rebuilt it properly.</p><div class="card-cta"><span class="read-review">Read Review <i class="fa-solid fa-arrow-right"></i></span></div></div>
-          <a href="reviews.html" class="stretched-link" style="position:absolute;inset:0;"></a>
+          <a href="review-details-resident-evil-4.html" class="stretched-link" style="position:absolute;inset:0;"></a>
         </div>
       </div>
 
@@ -154,7 +154,11 @@
       <div class="col-lg-4 col-md-6 footer-col">
         <a href="index.html" class="pc-logo" style="margin-bottom:16px;display:inline-flex;"><span class="logo-mark"><i class="fa-solid fa-cloud-bolt"></i></span>Pixel<span class="accent">Cloudz</span></a>
         <p>Honest, in-depth video game reviews, ratings, and platform availability for players who want the real story before they hit play.</p>
-     
+        <!-- Social links intentionally omitted until real, verified brand accounts exist.
+             Add them here once claimed, e.g.:
+             <div class="footer-social">
+               <a href="https://facebook.com/YOUR-VERIFIED-PAGE" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+             </div> -->
       </div>
       <div class="col-lg-2 col-md-6 footer-col"><h6>Quick Links</h6><ul><li><a href="index.html">Home</a></li><li><a href="reviews.html">Reviews</a></li><li><a href="top-rated.html">Top Rated</a></li><li><a href="latest.html">Latest</a></li><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li></ul></div>
       <div class="col-lg-2 col-md-6 footer-col"><h6>Categories</h6><ul><li><a href="categories.html">Action</a></li><li><a href="categories.html">RPG</a></li><li><a href="categories.html">Open World</a></li><li><a href="categories.html">Horror</a></li><li><a href="categories.html">Indie</a></li></ul></div>
@@ -177,11 +181,12 @@
 
 <button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
 
-<script src="./assets/js/jquery.js"></script>
-<script src="./assets/js/bootstrap.js"></script>
-<script src="./assets/js/fontawsome.js"></script>
-  <script src="./assets/js/aos.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="assets/js/search-index.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/cookie-consent.js"></script>
 <script>
   $(function(){
     $("#loadMoreBtn").on("click", function(){
