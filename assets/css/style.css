@@ -1590,7 +1590,11 @@ button {
   padding: 26px;
   margin-bottom: 24px;
 }
-
+.sidebar-card  h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: var(--electric-blue);
+}
 .sidebar-card h6 {
   font-size: 12px;
   letter-spacing: 1.5px;
@@ -1925,8 +1929,8 @@ button {
   margin-bottom: 8px;
 }
 
-.legal-content h5 {
-  font-size: 16px;
+.legal-content h5 , .legal-content h4 , .legal-content h3,.legal-content h2 {
+  font-size: 1.1rem;
 }
 
 .legal-content table.pc-table {
