@@ -966,7 +966,7 @@ button {
   color: var(--cyan);
 }
 
-.platform-card h3 {
+.platform-card h3 , .platform-card h2{
   font-size: 15px;
   margin-bottom: 4px;
 }
