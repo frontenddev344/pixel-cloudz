@@ -1519,7 +1519,7 @@ button {
 .pc-accordion .accordion-body {
   color: var(--text-secondary);
   font-size: 14px;
-  padding: 0 22px 22px;
+  padding: 22px 22px;
 }
 
 /* Tables */
