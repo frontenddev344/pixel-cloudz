@@ -20,7 +20,7 @@
   }
   .section{padding:60px 0;}
   .section-head.flex{align-items:flex-start;}
-  .pc-hero{min-height:auto;padding-top:160px;padding-bottom:60px;}
+  .pc-hero{min-height:auto;padding-top:130px;padding-bottom:60px;}
   .pc-hero-stats{gap:30px;margin-top:50px;}
   .pc-hero-stats .stat .num{font-size:28px;}
   .footer-bottom{flex-direction:column;text-align:center;}
