@@ -1008,7 +1008,7 @@ button {
   font-size: 17px;
 }
 
-.category-chip h3 {
+.category-chip h3 ,.category-chip h2 {
   font-size: 14px;
   color: #fff;
   margin-bottom: 2px;
