@@ -1264,7 +1264,7 @@ button {
 .pc-breadcrumb {
   background: var(--bg-surface);
   border-bottom: 1px solid var(--border-soft);
-  padding: 140px 0 26px;
+  padding: 160px 0 26px;
 }
 
 .pc-breadcrumb .crumbs {
@@ -1915,7 +1915,16 @@ button {
 .swiper-slide:hover img {
   filter: brightness(1.08);
 }
-
+.swiper-button-next, .swiper-button-prev {
+    color: var(--electric-blue);
+}
+.swiper-pagination-bullet {
+    background: var(--electric-blue);
+    opacity: var(--swiper-pagination-bullet-inactive-opacity, .2);
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+  opacity:1;
+}
 /* Sidebar card lift on hover */
 .sidebar-card {
   transition: .3s ease;
