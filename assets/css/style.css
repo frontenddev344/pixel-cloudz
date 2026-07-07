@@ -1292,7 +1292,7 @@ button {
 /* ---------- Page Hero (inner pages) ---------- */
 .page-hero {
   background: var(--grad-hero);
-  padding: 150px 0 70px;
+  padding: 180px 0 70px;
   position: relative;
   overflow: hidden;
   border-bottom: 1px solid var(--border-soft);
