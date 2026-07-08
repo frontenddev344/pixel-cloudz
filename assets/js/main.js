@@ -202,25 +202,96 @@
     });
 
     /* ---------- Contact form validation ---------- */
-    $("#contactForm").on("submit", function (e) {
-      const $form = $(this);
-      let valid = true;
-      $form.find("[required]").each(function () {
-        if (!$(this).val() || ($(this).attr("type") === "email" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test($(this).val()))) {
-          valid = false;
-          $(this).addClass("is-invalid");
-        } else {
-          $(this).removeClass("is-invalid");
-        }
-      });
-      const $status = $("#contactFormStatus");
-      if (!valid) {
+    const form = document.getElementById("contactForm");
+    const status = document.getElementById("contactFormStatus");
+    
+    form.addEventListener("submit", function (e) {
+    
         e.preventDefault();
-        $status.removeClass("success").addClass("error").text("Please fill in all fields correctly.").show();
-        return;
-      }
-      // Validation passed — let the form submit for real (to FormSubmit).
-      $status.removeClass("error").addClass("success").text("Sending your message...").show();
+    
+        const name = document.getElementById("name");
+        const email = document.getElementById("email");
+        const subject = document.getElementById("subject");
+        const message = document.getElementById("message");
+    
+        // Clear previous validation
+        [name, email, subject, message].forEach(field => {
+            field.setCustomValidity("");
+            field.classList.remove("is-invalid");
+        });
+    
+        // Required field validation
+        if (!name.value.trim()) {
+            name.setCustomValidity("Please enter your name.");
+        }
+    
+        if (!email.value.trim()) {
+            email.setCustomValidity("Please enter your email address.");
+        }
+    
+        if (!subject.value.trim()) {
+            subject.setCustomValidity("Please enter a subject.");
+        }
+    
+        if (!message.value.trim()) {
+            message.setCustomValidity("Please enter your message.");
+        }
+    
+        if (!form.checkValidity()) {
+            form.reportValidity();
+    
+            status.classList.remove("success");
+            status.classList.add("error");
+            status.textContent = "Please fill in all required fields.";
+            status.style.display = "block";
+    
+            return;
+        }
+    
+        // Name Validation
+        if (!/^[A-Za-z\s]{3,50}$/.test(name.value.trim())) {
+            name.setCustomValidity("Please enter a valid name (minimum 3 letters).");
+        }
+    
+        // Email Validation
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())) {
+            email.setCustomValidity("Please enter a valid email address.");
+        }
+    
+        // Subject Validation
+        if (subject.value.trim().length < 5) {
+            subject.setCustomValidity("Subject must be at least 5 characters long.");
+        }
+    
+        // Message Validation
+        if (message.value.trim().length < 10) {
+            message.setCustomValidity("Please enter at least 10 characters in your message.");
+        }
+    
+        if (!form.checkValidity()) {
+            form.reportValidity();
+    
+            status.classList.remove("success");
+            status.classList.add("error");
+            status.textContent = "Please correct the highlighted fields.";
+            status.style.display = "block";
+    
+            return;
+        }
+    
+        // ===== SUCCESS =====
+    
+        status.classList.remove("error");
+        status.classList.add("success");
+        status.textContent = "Thanks for reaching out! We'll get back to you within 1–2 business days.";
+        status.style.display = "block";
+    
+        form.reset();
+    
+        setTimeout(() => {
+            status.style.display = "none";
+        }, 3000);
+    
     });
 
     /* ---------- Review filters (reviews.html) ---------- */
