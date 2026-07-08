@@ -67,34 +67,92 @@
       <div class="col-lg-7" data-aos="fade-right">
         <div class="glass-panel p-4 p-md-5">
           <h2 class="mb-4" style="font-size:22px;">Send Us A Message</h2>
-          <form id="contactForm" novalidate action="https://formsubmit.co/contact@pixelcloudz.com" method="POST">
-            <input type="hidden" name="_subject" value="New message from PixelCloudz contact form">
-            <input type="hidden" name="_captcha" value="true">
-            <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_next" value="https://pixelcloudz.com/contact.html?sent=1">
+          <form id="contactForm" novalidate>
+
             <div class="row g-3">
-              <div class="col-md-6">
-                <label class="mb-2" style="font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);">Full Name</label>
-                <input type="text" class="form-control" name="name" required style="background:var(--bg-surface-2);border:1px solid var(--border-soft);color:#fff;padding:13px 16px;border-radius:8px;">
-              </div>
-              <div class="col-md-6">
-                <label class="mb-2" style="font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);">Email Address</label>
-                <input type="email" class="form-control" name="email" required style="background:var(--bg-surface-2);border:1px solid var(--border-soft);color:#fff;padding:13px 16px;border-radius:8px;">
-              </div>
-              <div class="col-12">
-                <label class="mb-2" style="font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);">Subject</label>
-                <input type="text" class="form-control" name="subject" required style="background:var(--bg-surface-2);border:1px solid var(--border-soft);color:#fff;padding:13px 16px;border-radius:8px;">
-              </div>
-              <div class="col-12">
-                <label class="mb-2" style="font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);">Message</label>
-                <textarea class="form-control" name="message" rows="5" required style="background:var(--bg-surface-2);border:1px solid var(--border-soft);color:#fff;padding:13px 16px;border-radius:8px;"></textarea>
-              </div>
-              <div class="col-12">
-                <button type="submit" class="btn-neon w-100">Send Message <i class="fa-solid fa-paper-plane"></i></button>
-              </div>
-              <div class="col-12"><p id="contactFormStatus" class="form-msg" style="display:none;"></p></div>
+        
+                <div class="col-md-6">
+                    <label class="mb-2"
+                        style="font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);">
+                        Full Name
+                    </label>
+        
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        class="form-control"
+                        required
+                        oninvalid="this.setCustomValidity('Please enter your name.')"
+                        oninput="this.setCustomValidity('')"
+                        style="background:var(--bg-surface-2);border:1px solid var(--border-soft);color:#fff;padding:13px 16px;border-radius:8px;">
+                </div>
+        
+                <div class="col-md-6">
+                    <label class="mb-2"
+                        style="font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);">
+                        Email Address
+                    </label>
+        
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        class="form-control"
+                        required
+                        oninvalid="this.setCustomValidity('Please enter your email address.')"
+                        oninput="this.setCustomValidity('')"
+                        style="background:var(--bg-surface-2);border:1px solid var(--border-soft);color:#fff;padding:13px 16px;border-radius:8px;">
+                </div>
+        
+                <div class="col-12">
+                    <label class="mb-2"
+                        style="font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);">
+                        Subject
+                    </label>
+        
+                    <input
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        class="form-control"
+                        required
+                        oninvalid="this.setCustomValidity('Please enter a subject.')"
+                        oninput="this.setCustomValidity('')"
+                        style="background:var(--bg-surface-2);border:1px solid var(--border-soft);color:#fff;padding:13px 16px;border-radius:8px;">
+                </div>
+        
+                <div class="col-12">
+                    <label class="mb-2"
+                        style="font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--text-muted);">
+                        Message
+                    </label>
+        
+                    <textarea
+                        id="message"
+                        name="message"
+                        class="form-control"
+                        rows="5"
+                        required
+                        oninvalid="this.setCustomValidity('Please enter your message.')"
+                        oninput="this.setCustomValidity('')"
+                        style="background:var(--bg-surface-2);border:1px solid var(--border-soft);color:#fff;padding:13px 16px;border-radius:8px;"></textarea>
+                </div>
+        
+                <div class="col-12">
+                    <button type="submit" class="btn-neon w-100">
+                        Send Message
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </div>
+        
+                <div class="col-12">
+                    <p id="contactFormStatus" class="form-msg" style="display:none;"></p>
+                </div>
+        
             </div>
-          </form>
+        
+        </form>
         </div>
       </div>
       <div class="col-lg-5" data-aos="fade-left">
