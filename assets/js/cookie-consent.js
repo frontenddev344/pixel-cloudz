@@ -36,22 +36,41 @@
     var wrap = document.createElement("div");
     wrap.id = "pcCookieBanner";
     wrap.setAttribute("role", "dialog");
-    wrap.setAttribute("aria-label", "Cookie consent");
+    wrap.setAttribute("aria-modal", "true");
+    wrap.setAttribute("aria-labelledby", "pcCookieTitle");
+    wrap.setAttribute("aria-describedby", "pcCookieDescription");
+  
     wrap.innerHTML =
-      '<div class="pc-cookie-inner">' +
-        '<p class="pc-cookie-text">We use essential cookies to run this site, and optional analytics/advertising cookies to understand traffic and show relevant ads. You can accept or decline non-essential cookies below. See our <a href="privacy-policy.html">Privacy Policy</a> for details.</p>' +
-        '<div class="pc-cookie-actions">' +
-          '<button type="button" class="btn-outline-neon btn-sm" id="pcCookieReject">Reject Non-Essential</button>' +
-          '<button type="button" class="btn-neon btn-sm" id="pcCookieAccept">Accept All</button>' +
-        '</div>' +
-      '</div>';
+    '<div class="pc-cookie-inner">' +
+  
+      '<h4 id="pcCookieTitle">Cookie Preferences</h4>' +
+  
+      '<p class="pc-cookie-text" id="pcCookieDescription">' +
+        'We use essential cookies to keep PixelCloudz running smoothly and optional analytics and advertising cookies to improve your experience. You can accept or reject non-essential cookies. See our <a href="privacy-policy.html">Privacy Policy</a> for more information.' +
+      '</p>' +
+  
+      '<div class="pc-cookie-actions">' +
+  
+        '<button type="button" class="btn-outline-neon btn-sm" id="pcCookieReject">' +
+          'Reject Non-Essential' +
+        '</button>' +
+  
+        '<button type="button" class="btn-neon btn-sm" id="pcCookieAccept">' +
+          'Accept All' +
+        '</button>' +
+  
+      '</div>' +
+  
+    '</div>';
+  
     document.body.appendChild(wrap);
-
+  
     document.getElementById("pcCookieAccept").addEventListener("click", function () {
       setConsent("accepted");
       hideBanner();
       loadDeferredScripts();
     });
+  
     document.getElementById("pcCookieReject").addEventListener("click", function () {
       setConsent("rejected");
       hideBanner();
