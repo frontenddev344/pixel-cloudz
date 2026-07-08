@@ -1712,7 +1712,9 @@ button {
 .btn-neon:hover {
   animation: none;
 }
-
+#contactForm .form-control:focus {
+  box-shadow: none;
+}
 /* Platform card icon motion */
 .platform-card .p-icon {
   transition: .4s cubic-bezier(.34, 1.56, .64, 1);
