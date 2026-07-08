@@ -1958,9 +1958,7 @@ button {
   text-decoration: underline;
   text-underline-offset: 2px;
 }
-.footer-contact.contact_address li a:hover {
-  color: var(--electric-blue);
-}
+
 /* Cookie consent banner */
 #pcCookieBanner {
   position: fixed;
@@ -2006,12 +2004,10 @@ button {
   margin: 0 auto;
   padding: 18px 24px;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   gap: 24px;
   flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 .pc-cookie-text {
