@@ -5,76 +5,260 @@
 /* ---------- Large Desktop already default ---------- */
 
 /* ---------- Laptop / small desktop ---------- */
-@media (max-width:1199.98px){
-  .section{padding:70px 0;}
-  .pc-hero-stats{gap:40px;}
+@media (max-width:1199.98px) {
+  .section {
+    padding: 70px 0;
+  }
+
+  .pc-hero-stats {
+    gap: 40px;
+  }
 }
 
 /* ---------- Tablet / iPad ---------- */
-@media (max-width:991.98px){
-  .pc-nav-links{display:none;}
-  .pc-burger{
-    display:flex;width:42px;height:42px;border-radius:10px;
-    align-items:center;justify-content:center;background:var(--bg-surface-2);
-    border:1px solid var(--border-soft);color:#fff;cursor:pointer;font-size:18px;
+@media (max-width:991.98px) {
+  .pc-nav-links {
+    display: none;
   }
-  .section{padding:60px 0;}
-  .section-head.flex{align-items:flex-start;}
-  .pc-hero{min-height:auto;padding-top:130px;padding-bottom:60px;}
-  .pc-hero-stats{gap:30px;margin-top:50px;}
-  .pc-hero-stats .stat .num{font-size:28px;}
-  .footer-bottom{flex-direction:column;text-align:center;}
-  .page-hero{padding:160px 0 50px;}
+
+  .pc-burger {
+    display: flex;
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-surface-2);
+    border: 1px solid var(--border-soft);
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  .section-head.flex {
+    align-items: flex-start;
+  }
+
+  .pc-hero {
+    min-height: auto;
+    padding-top: 130px;
+    padding-bottom: 60px;
+  }
+
+  .pc-hero-stats {
+    gap: 30px;
+    margin-top: 50px;
+  }
+
+  .pc-hero-stats .stat .num {
+    font-size: 28px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .page-hero {
+    padding: 160px 0 50px;
+  }
 }
 
 /* ---------- Mobile (large phones) ---------- */
-@media (max-width:767.98px){
-  .container-xl{padding:0 16px;}
-  .section{padding:50px 0;}
-  .section-sm{padding:40px 0;}
-  .section-head{margin-bottom:32px;}
-  .btn-neon, .btn-outline-neon{padding:13px 24px;font-size:12.5px;}
-  .pc-hero-actions{flex-direction:column;width:100%;max-width:280px;margin:0 auto;}
-  .pc-hero-actions .btn-neon, .pc-hero-actions .btn-outline-neon{width:100%;}
-  .pc-hero-stats{gap:22px;}
-  .pc-hero-stats .stat .num{font-size:22px;}
-  .pc-hero-stats .stat .lbl{font-size:10px;}
-  .newsletter-panel{padding:40px 20px;}
-  .newsletter-form{flex-direction:column;}
-  .footer-col{margin-bottom:30px;}
-  .pc-footer{padding-top:60px;}
-  .filter-bar{padding:18px;}
-  .score-ring{width:90px;height:90px;}
-  .score-ring .val{font-size:21px;}
-  .subscore-row .lbl{width:100px;font-size:12px;}
-  .pc-table{font-size:12px;}
-  .pc-table th, .pc-table td{padding:10px 8px;}
-  .quick-info-row{font-size:12.5px;}
-  .back-to-top{width:42px;height:42px;bottom:20px;right:20px;font-size:16px;}
-  .pc-mobile-menu{padding:24px 20px;}
+@media (max-width:767.98px) {
+  .container-xl {
+    padding: 0 16px;
+  }
+
+  .section {
+    padding: 50px 0;
+  }
+
+  .section-sm {
+    padding: 40px 0;
+  }
+
+  .section-head {
+    margin-bottom: 32px;
+  }
+
+  .btn-neon,
+  .btn-outline-neon {
+    padding: 13px 24px;
+    font-size: 12.5px;
+  }
+
+  .pc-hero-actions {
+    flex-direction: column;
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .pc-hero-actions .btn-neon,
+  .pc-hero-actions .btn-outline-neon {
+    width: 100%;
+  }
+
+  .pc-hero-stats {
+    gap: 22px;
+  }
+
+  .pc-hero-stats .stat .num {
+    font-size: 22px;
+  }
+
+  .pc-hero-stats .stat .lbl {
+    font-size: 10px;
+  }
+
+  .newsletter-panel {
+    padding: 40px 20px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .footer-col {
+    margin-bottom: 30px;
+  }
+
+  .pc-footer {
+    padding-top: 60px;
+  }
+
+  .filter-bar {
+    padding: 18px;
+  }
+
+  .score-ring {
+    width: 90px;
+    height: 90px;
+  }
+
+  .score-ring .val {
+    font-size: 21px;
+  }
+
+  .subscore-row .lbl {
+    width: 100px;
+    font-size: 12px;
+  }
+
+  .pc-table {
+    font-size: 12px;
+  }
+
+  .pc-table th,
+  .pc-table td {
+    padding: 10px 8px;
+  }
+
+  .quick-info-row {
+    font-size: 12.5px;
+  }
+
+  .back-to-top {
+    width: 42px;
+    height: 42px;
+    bottom: 20px;
+    right: 20px;
+    font-size: 16px;
+  }
+  .pc-mobile-menu {
+    padding: 24px 20px;
+  }
+  .footer-bottom {
+    margin-top: 20px;
+}
+.pc-search-box input {
+  font-size: 15px;
+  padding: 16px 20px;
+}
 }
 
 /* ---------- Small Mobile ---------- */
-@media (max-width:479.98px){
-  .pc-logo{font-size:18px;}
-  .pc-logo .logo-mark{width:32px;height:32px;font-size:15px;}
-  .eyebrow{font-size:10.5px;padding:5px 12px;}
-  .pc-hero-stats{flex-wrap:wrap;row-gap:20px;}
-  .pc-hero-stats .stat{width:45%;}
-  .game-card .card-body{padding:16px;}
-  .game-card .card-title{font-size:16px;}
-  .platform-card{padding:20px 14px;}
-  .proscons-card{padding:20px;}
-  .sidebar-card{padding:20px;}
-  .pc-table{display:block;overflow-x:auto;white-space:nowrap;}
+@media (max-width:479.98px) {
+  .pc-logo {
+    font-size: 18px;
+  }
+
+  .pc-logo .logo-mark {
+    width: 32px;
+    height: 32px;
+    font-size: 15px;
+  }
+
+  .eyebrow {
+    font-size: 10.5px;
+    padding: 5px 12px;
+  }
+
+  .pc-hero-stats {
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+
+  .pc-hero-stats .stat {
+    width: 45%;
+  }
+
+  .game-card .card-body {
+    padding: 16px;
+  }
+
+  .game-card .card-title {
+    font-size: 16px;
+  }
+
+  .platform-card {
+    padding: 20px 14px;
+  }
+
+  .proscons-card {
+    padding: 20px;
+  }
+
+  .sidebar-card {
+    padding: 20px;
+  }
+
+  .pc-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .pc-logo img {
+    max-width: 90px;
+  }
 }
 
 /* ---------- Landscape phones ---------- */
-@media (max-height:480px) and (orientation:landscape){
-  .pc-hero{min-height:auto;padding-top:110px;padding-bottom:40px;}
-  .pc-hero-stats{margin-top:30px;}
-  .pc-mobile-menu{overflow-y:auto;}
+@media (max-height:480px) and (orientation:landscape) {
+  .pc-hero {
+    min-height: auto;
+    padding-top: 110px;
+    padding-bottom: 40px;
+  }
+
+  .pc-hero-stats {
+    margin-top: 30px;
+  }
+
+  .pc-mobile-menu {
+    overflow-y: auto;
+  }
 }
 
 /* Prevent any horizontal scroll globally */
-html, body{max-width:100%;overflow-x:hidden;}
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
