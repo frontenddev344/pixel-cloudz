@@ -6,12 +6,15 @@
 
 /* ---------- Laptop / small desktop ---------- */
 @media (max-width:1199.98px) {
+  html{
+    font-size: 15px;
+  }
   .section {
-    padding: 70px 0;
+    padding: 4.375rem 0;
   }
 
   .pc-hero-stats {
-    gap: 40px;
+    gap: 2.5rem;
   }
 }
 
@@ -23,8 +26,8 @@
 
   .pc-burger {
     display: flex;
-    width: 42px;
-    height: 42px;
+    width: 2.625rem;
+    height: 2.625rem;
     border-radius: 10px;
     align-items: center;
     justify-content: center;
@@ -32,11 +35,11 @@
     border: 1px solid var(--border-soft);
     color: #fff;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   .section {
-    padding: 60px 0;
+    padding: 3.75rem 0;
   }
 
   .section-head.flex {
@@ -44,18 +47,18 @@
   }
 
   .pc-hero {
-    min-height: auto;
-    padding-top: 130px;
-    padding-bottom: 60px;
+    min-height: 100vh;
+    padding-top: 8.125rem;
+    padding-bottom: 3.75rem;
   }
 
   .pc-hero-stats {
-    gap: 30px;
-    margin-top: 50px;
+    gap: 1.875rem;
+    margin-top: 3.125rem;
   }
 
   .pc-hero-stats .stat .num {
-    font-size: 28px;
+    font-size: 1.75rem;
   }
 
   .footer-bottom {
@@ -64,38 +67,42 @@
   }
 
   .page-hero {
-    padding: 160px 0 50px;
+    padding: 10rem 0 3.125rem;
   }
+
 }
 
 /* ---------- Mobile (large phones) ---------- */
 @media (max-width:767.98px) {
+  html{
+    font-size: 14px;
+  }
   .container-xl {
-    padding: 0 16px;
+    padding: 0 1rem;
   }
 
   .section {
-    padding: 50px 0;
+    padding: 3.125rem 0;
   }
 
   .section-sm {
-    padding: 40px 0;
+    padding: 2.5rem 0;
   }
 
   .section-head {
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
   }
 
   .btn-neon,
   .btn-outline-neon {
-    padding: 13px 24px;
-    font-size: 12.5px;
+    padding: 0.8125rem 1.5rem;
+    font-size: 0.8125rem;
   }
 
   .pc-hero-actions {
     flex-direction: column;
     width: 100%;
-    max-width: 280px;
+    max-width: 17.5rem;
     margin: 0 auto;
   }
 
@@ -105,19 +112,19 @@
   }
 
   .pc-hero-stats {
-    gap: 22px;
+    gap: 1.375rem;
   }
 
   .pc-hero-stats .stat .num {
-    font-size: 22px;
+    font-size: 1.375rem;
   }
 
   .pc-hero-stats .stat .lbl {
-    font-size: 10px;
+    font-size: 0.625rem;
   }
 
   .newsletter-panel {
-    padding: 40px 20px;
+    padding: 2.5rem 1.25rem;
   }
 
   .newsletter-form {
@@ -125,73 +132,87 @@
   }
 
   .footer-col {
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
   }
 
   .pc-footer {
-    padding-top: 60px;
+    padding-top:3.75rem;
   }
 
   .filter-bar {
-    padding: 18px;
+    padding: 1.125rem;
   }
 
   .score-ring {
-    width: 90px;
-    height: 90px;
+    width: 5.625rem;
+    height: 5.625rem;
   }
 
   .score-ring .val {
-    font-size: 21px;
+    font-size: 1.25rem;
   }
 
   .subscore-row .lbl {
     width: 100px;
-    font-size: 12px;
+    font-size: 0.8125rem;
   }
 
   .pc-table {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 
   .pc-table th,
   .pc-table td {
-    padding: 10px 8px;
+    padding: 0.625rem 0.5rem;
   }
 
   .quick-info-row {
-    font-size: 12.5px;
+    font-size: 0.8125rem;
   }
 
   .back-to-top {
-    width: 42px;
-    height: 42px;
+    width: 2.625rem;
+    height: 2.625rem;
     bottom: 20px;
     right: 20px;
     font-size: 16px;
   }
   .pc-mobile-menu {
-    padding: 24px 20px;
+    padding: 1.5rem 1.25rem;
   }
   .footer-bottom {
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 .pc-search-box input {
-  font-size: 15px;
-  padding: 16px 20px;
+  font-size: 0.9375rem;
+  padding: 1rem 1.125rem;
+}
+.pc-cookie-inner {
+  padding: 1rem;
+}
+
+.pc-cookie-actions {
+  width: 100%;
+}
+
+.pc-cookie-actions .btn-neon,
+.pc-cookie-actions .btn-outline-neon {
+  flex: 1;
+  padding: 0.625rem 1rem;
+  font-size: 0.625rem;
 }
 }
 
 /* ---------- Small Mobile ---------- */
 @media (max-width:479.98px) {
   .pc-logo {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   .pc-logo .logo-mark {
-    width: 32px;
-    height: 32px;
-    font-size: 15px;
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.9375rem;
   }
 
   .eyebrow {
@@ -201,7 +222,7 @@
 
   .pc-hero-stats {
     flex-wrap: wrap;
-    row-gap: 20px;
+    row-gap: 1.25rem;
   }
 
   .pc-hero-stats .stat {
@@ -209,23 +230,23 @@
   }
 
   .game-card .card-body {
-    padding: 16px;
+    padding: 1rem;
   }
 
   .game-card .card-title {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .platform-card {
-    padding: 20px 14px;
+    padding: 1.25rem 0.875rem;
   }
 
   .proscons-card {
-    padding: 20px;
+    padding: 1.25rem;
   }
 
   .sidebar-card {
-    padding: 20px;
+    padding: 1.25rem;
   }
 
   .pc-table {
@@ -235,20 +256,23 @@
   }
 
   .pc-logo img {
-    max-width: 90px;
+    max-width: 5.625rem;
   }
+  .scroll-cue {
+    bottom: 10px;
+}
 }
 
 /* ---------- Landscape phones ---------- */
 @media (max-height:480px) and (orientation:landscape) {
   .pc-hero {
     min-height: auto;
-    padding-top: 110px;
-    padding-bottom: 40px;
+    padding-top: 6.875rem;
+    padding-bottom: 2.5rem;
   }
 
   .pc-hero-stats {
-    margin-top: 30px;
+    margin-top: 1.875rem;
   }
 
   .pc-mobile-menu {
@@ -256,9 +280,3 @@
   }
 }
 
-/* Prevent any horizontal scroll globally */
-html,
-body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
