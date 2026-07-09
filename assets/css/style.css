@@ -324,7 +324,18 @@ button {
   background: transparent;
   transition: .35s ease;
 }
-
+.pc-mobile-close {
+  background: var(--electric-blue);
+  color: #000;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  height: 30px;
+  width: 30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
 .pc-navbar.scrolled {
   padding: 0.75rem 0;
   background: rgba(8, 11, 20, 0.85);
