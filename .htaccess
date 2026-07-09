@@ -10,9 +10,21 @@
 </IfModule>
 
 RewriteEngine On
+
+# =====================================================
+# Redirect non-www to www
+# =====================================================
+RewriteCond %{HTTP_HOST} ^pixelcloudz\.com$ [NC]
+RewriteRule ^(.*)$ https://www.pixelcloudz.com /$1 [R=301,L]
+
+# =====================================================
+# Serve extensionless URLs
+# =====================================================
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^$ index.html [NC,L]
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
 ErrorDocument 404 /404.html
+
