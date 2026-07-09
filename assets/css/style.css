@@ -385,7 +385,7 @@ button {
 
 .pc-nav-links a:hover,
 .pc-nav-links a.active {
-  color: #fff;
+  color: var(--electric-blue);
   background: rgba(255, 255, 255, 0.05);
 }
 
@@ -394,7 +394,7 @@ button {
   position: absolute;
   left: 16px;
   right: 16px;
-  bottom: 4px;
+  bottom: 0;
   height: 2px;
   background: var(--grad-cool);
   border-radius: 2px;
