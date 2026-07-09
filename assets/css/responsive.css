@@ -200,6 +200,14 @@
 }
 }
 
+/* ---------- Middle Mobile ---------- */
+@media (max-width:575.98px) {
+  .rank-row {
+    flex-direction: column;
+} 
+}
+
+
 /* ---------- Small Mobile ---------- */
 @media (max-width:479.98px) {
   .pc-logo {
