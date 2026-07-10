@@ -39,8 +39,8 @@
 
   /* Text */
   --text-primary: #f5f7f2;
-  --text-secondary: #a9ada4;
-  --text-muted: #686c62;
+  --text-secondary: #dce2d6;
+  --text-muted: #cad1bf;
 
   /* Borders / shadows */
   --border-soft: rgba(255, 255, 255, 0.08);
@@ -885,7 +885,9 @@ button {
   gap: 0.625rem;
   flex: 1;
 }
-
+.load_more_butn {
+  margin-top: 3.75rem;
+}
 .game-card .card-title {
   font-size: 1.125rem;
   color: #fff;
@@ -1580,6 +1582,7 @@ button {
   gap:0.3125rem;
   font-size: 0.75rem;
   font-weight: 600;
+  vertical-align: middle;
 }
 
 .status-dot.yes {
@@ -1962,6 +1965,7 @@ button {
 
 .legal-content h5 , .legal-content h4 , .legal-content h3,.legal-content h2 {
   font-size: 1.1rem;
+  margin-bottom: 1.25rem;
 }
 
 .legal-content table.pc-table {
@@ -1972,7 +1976,9 @@ button {
   text-decoration: underline;
   text-underline-offset: 2px;
 }
-
+.legal-content p{
+  margin-bottom: 0.5rem;
+}
 /* Cookie consent banner */
 #pcCookieBanner {
   position: fixed;

@@ -41,7 +41,9 @@
   .section {
     padding: 3.75rem 0;
   }
-
+  .load_more_butn {
+    margin-top: 2.75rem;
+}
   .section-head.flex {
     align-items: flex-start;
   }
