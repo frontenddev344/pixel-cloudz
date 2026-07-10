@@ -1967,7 +1967,9 @@ button {
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
 }
-
+.swiper-wrapper .game-card {
+  min-height: 310px;
+}
 .legal-content table.pc-table {
   font-size: 0.8125rem;
 }
