@@ -1544,7 +1544,7 @@ button {
 }
 
 .pc-table th {
-  background: var(--bg-surface-2);
+  background: #aeff007e;
   color: var(--text-primary);
   font-size: 0.75rem;
   letter-spacing: 1px;
@@ -1565,7 +1565,7 @@ button {
 .pc-table td {
   padding: 0.875rem 1rem;
   text-align: center;
-  border-bottom: 1px solid var(--border-soft);
+  border-bottom: 1px solid var(--neon-blue);
   font-size: 0.875rem;
   color: var(--text-secondary);
 }
